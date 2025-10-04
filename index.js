@@ -1,8 +1,13 @@
-const loginout = document.querySelector('.login-out');
-const userloginout = document.querySelector('.user')
+const loginbutton = document.querySelector('#log-in')
+const logoutbutton = document.querySelector('#log-out')
+const logout = document.querySelector('#toogle-log-out')
+const login = document.querySelector('#toogle-log-in')
 
-loginout.addEventListener('click', function(){
-    userloginout.classList.remove('active')
-    userloginout.classList.add('active')
-    window.location.replace("login.html")
+logoutbutton.addEventListener('click', function(){
+    logout.classList.remove('active');
+    login.classList.add('active')
+})
+
+loginbutton.addEventListener('click',function(){
+    window.location.replace('login.html')
 })
