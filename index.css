@@ -99,10 +99,12 @@ form button{
     color: aliceblue;
     background: #f33131;
     border-radius: 5px;
-    transition: transform 0.3s;
+    transition: transform 0.1s;
 }
 
 form button:hover{
+    color: white;
+    background: #15015B;
     transform: translateY(-2px);
 }
 
