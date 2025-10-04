@@ -16,14 +16,45 @@ header{
     padding: 2rem 1rem;
 }
 
-.user{
-    display: none;
-    gap: 1.5rem;
+.menu{
+    display: flex;
 }
 
-.active{
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropdown-item{
+    display: none;
+    position: absolute;
+    background-color: #696FC7;
+    z-index: 1;
+}
+
+.dropdown-item a{
+    color: white;
+    text-decoration: none;
+    padding: 0.3rem 1rem;
+    display: block;
+}
+
+.dropdown-item a:hover{
+    background-color: white;
+    color: #696FC7;
+}
+
+.dropdown:hover .dropdown-item{
+    display: block;
+}
+
+.user{
+    display: none;
+}
+
+.user.active{
     display: flex;
-    cursor: pointer;
 }
 
 .button-hover h4{
@@ -31,6 +62,7 @@ header{
     font-family: geometric sans-serif;
     transition: transform 0.1s;
 	cursor: pointer;
+    padding: 0 0.4rem;
 }
 
 .button-hover h4:hover{
