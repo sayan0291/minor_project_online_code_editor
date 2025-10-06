@@ -20,6 +20,8 @@ header{
     display: flex;
 }
 
+/* dropdown menu for select languages */
+
 .dropdown{
     position: relative;
     display: inline-block;
@@ -49,6 +51,8 @@ header{
     display: block;
 }
 
+/* user section customization */
+
 .user{
     display: none;
 }
@@ -56,6 +60,8 @@ header{
 .user.active{
     display: flex;
 }
+
+/* buttons customization */
 
 .button-hover h4{
 	color: aliceblue;
@@ -70,6 +76,7 @@ header{
     transform: translateY(-0.5px);
 }
 
+/* demo languages */
 
 
 .maincontainer{
@@ -81,6 +88,7 @@ header{
     gap: 2rem;
 }
 
+
 .border-style{
     border: 2px solid rgb(40, 164, 209);
     border-radius: 5px;
@@ -89,18 +97,53 @@ header{
     gap: 1rem;
 }
 
+
+h3{
+    color: rgb(16, 16, 194);
+    font-family: geometric sans-serif;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+
+img{
+    height: 70%;
+    width: 30%;
+    border-radius: 5px;
+    box-shadow:3px 3px 3px 2px rgb(0 , 0 , 0, 0.2);
+    transition: transform 0.3s;
+}
+
+img:hover{
+    transform: translateY(-2px);
+}
+
+
+/* code run space for written */
+
+.codespace{
+    display: none;
+}
+
+
+.codespace header{
+    margin: 0.5rem 1rem;
+    padding: 1rem;
+    background-color: #bebfe6;
+    border-radius: 5px;
+}
+
+.writecode{
+    min-height: 80vh;
+}
+
+/* about contactus share privacy policy and terms & conditions */
+
 .h2-styling{
     padding: 1rem;
     margin: 0.5rem;
     font-family: sans-serif;
     color: #15015B;
-}
-
-p{
-    margin: 0.5rem;
-    color: #696FC7;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
 }
 
 .align-center{
@@ -110,6 +153,22 @@ p{
     align-items: center;
     text-align: center;
 }
+
+.fa-solid{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+/* about */
+
+p{
+    margin: 0.5rem;
+    color: #696FC7;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+/* contact us form */
 
 form{
     width: 30vw;
@@ -129,16 +188,18 @@ form button{
     margin: 1rem;
     border: none;
     color: aliceblue;
-    background: #f33131;
+    background: #15015B;
     border-radius: 5px;
     transition: transform 0.1s;
 }
 
 form button:hover{
     color: white;
-    background: #15015B;
+    background: #f33131;
     transform: translateY(-2px);
 }
+
+/* footer section */
 
 footer{
     display: flex;
@@ -161,25 +222,6 @@ footer{
     gap: 0 1rem;
 }
 
-h3{
-    color: rgb(16, 16, 194);
-    font-family: geometric sans-serif;
-    font-size: 1rem;
-    font-weight: bolder;
-}
-
-
-img{
-    height: 70%;
-    width: 30%;
-    border-radius: 5px;
-    box-shadow:3px 3px 3px 2px rgb(0 , 0 , 0, 0.2);
-    transition: transform 0.3s;
-}
-
-img:hover{
-    transform: translateY(-2px);
-}
 
 
 @media (max-width:768px) {
