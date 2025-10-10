@@ -9,23 +9,23 @@
 </head>
 <body>
     <header class="container1">
-        <h3 class="logo">logo</h3>
+        <h3><a href="#homepage">logo</a></h3>
         <div class="menu">
             <div class="dropdown button-hover">
                 <h4>Select Languages</h4>
                 <div class="dropdown-item">
-                    <a id="html-css-js">html&css&js</a>
-                    <a id="python">Python</a>
-                    <a id="java">Java</a>
-                    <a id="php">php</a>
-                    <a id="ruby">Ruby</a>
-                    <a id="c">C</a>
-                    <a id="cplus">C++</a>
-                    <a id="Kotlin">Kotlin</a>
-                    <a id="javascript">JavaScript</a>
+                    <a href="#codespaceid" id="html-css-js">html&css&js</a>
+                    <a href="#codespaceid" id="python">Python</a>
+                    <a href="#codespaceid" id="java">Java</a>
+                    <a href="#codespaceid" id="php">php</a>
+                    <a href="#codespaceid" id="ruby">Ruby</a>
+                    <a href="#codespaceid" id="c">C</a>
+                    <a href="#codespaceid" id="c++">C++</a>
+                    <a href="#codespaceid" id="Kotlin">Kotlin</a>
+                    <a href="#codespaceid" id="javascript">JavaScript</a>
                 </div>
             </div>
-            <div class="user button-hover active" id="toogle-log-out">
+            <div class="user button-hover  active" id="toogle-log-out">
                 <h4>User</h4>
                 <h4 id="log-out">Logout</h4>
             </div>
@@ -34,7 +34,10 @@
             </div>
         </div>
     </header>
-    <div class="scrolesection">
+
+    <!-- home page section  -->
+
+    <div class="scrolesection section" id="homepage">
         <div class="maincontainer" id="maincontainerid">
             <div class="border-style align-center">
                 <img src="images/html-css-js.png" alt="html_css_js">
@@ -73,30 +76,40 @@
                 <h3>Javascript</h3>
             </div>
         </div>
-        <div class="aboutsection align-center">
-            <h2 class="h2-styling">About</h2>
-            <p>Our mission is to help users learn programming more easily.</p>
-            <p>We are a small team of passionate developers constantly working to create programming resources that's accurate and easier to understand</p>
-            <p>we understand that creating textual content on the web to learn programming is not enoug</p>
-            <p></p>
-        </div>
-        <div class="contact-us align-center">
-            <h2 class="h2-styling">Contact Us</h2>
-            <form class="align-center">
-                <input type="text" placeholder="Enter Your Name" required>
-                <input type="email" placeholder="Enter Email Address" required>
-                <textarea name="sendmessage" id="send-message" rows="auto"></textarea>
-                <button>Submit</button>
-            </form>
-        </div>
-        <div class="share align-center">
-            <h2 class="h2-styling">Share</h2>
-        </div>
 
     </div>
+
+    <!-- about section  -->
+    <div class="aboutsection align-center section" id="about">
+        <h2 class="h2-styling">About</h2>
+        <p>Our mission is to help users learn programming more easily.</p>
+        <p>We are a small team of passionate developers constantly working to create programming resources that's accurate and easier to understand</p>
+        <p>we understand that creating textual content on the web to learn programming is not enoug</p>
+        <p></p>
+    </div>
+
+    <!-- contact section  -->
+    <div class="section"  id="contact">
+    <div class="contact-us align-center">
+        <h2 class="h2-styling">Contact Us</h2>
+        <form class="align-center">
+            <input type="text" placeholder="Enter Your Name" required>
+            <input type="email" placeholder="Enter Email Address" required>
+            <textarea name="sendmessage" id="send-message" rows="auto" required></textarea>
+            <button>Submit</button>
+        </form>
+    </div>
+    </div>
+
+    <!-- share section  -->
+    <div class="share align-center section" id="share">
+        <h2 class="h2-styling">Share</h2>
+    </div>
+
+    <!-- code write and execution section  -->
     <div class="codespace" id="codespaceid">
         <header>
-            <h3 id="languagename">python</h3>
+            <h3 id="languagename"></h3>
             <i class="fa-solid fa-play"></i>
         </header>
         <div class="writecode">
@@ -105,9 +118,9 @@
     </div>
     <footer>
         <div class="more button-hover padding-style">
-            <h4>about</h4>
-            <h4>contact</h4>
-            <h4>share</h4>
+            <h4><a href="#about">about</a></h4>
+            <h4><a href="#contact">contact</a></h4>
+            <h4><a href="#share">share</a></h4>
         </div>
         <div class="languages">
             <h4>Languages</h4>
@@ -125,5 +138,7 @@
         </div>
     </footer>
     <script src="index.js"></script>
+    <script src="dropdown.js"></script>
+    <script src="login.js"></script>
 </body>
 </html>

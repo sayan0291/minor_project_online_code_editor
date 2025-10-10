@@ -16,11 +16,11 @@ header{
     padding: 2rem 1rem;
 }
 
+/* dropdown menu for select languages */
+
 .menu{
     display: flex;
 }
-
-/* dropdown menu for select languages */
 
 .dropdown{
     position: relative;
@@ -63,7 +63,8 @@ header{
 
 /* buttons customization */
 
-.button-hover h4{
+.button-hover h4,h4 a{
+    text-decoration: none;
 	color: aliceblue;
     font-family: geometric sans-serif;
     transition: transform 0.1s;
@@ -72,6 +73,11 @@ header{
 }
 
 .button-hover h4:hover{
+	color: #bebfe6;
+    transform: translateY(-0.5px);
+}
+
+.button-hover h4 a:hover{
 	color: #bebfe6;
     transform: translateY(-0.5px);
 }
@@ -154,6 +160,7 @@ img:hover{
     text-align: center;
 }
 
+
 .fa-solid{
     font-size: 1.5rem;
     font-weight: bolder;
@@ -184,7 +191,7 @@ form input,textarea{
 }
 
 form button{
-    padding: 0.5rem;
+    padding: 0.7rem;
     margin: 1rem;
     border: none;
     color: aliceblue;
