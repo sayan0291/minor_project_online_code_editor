@@ -1,0 +1,54 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #696FC7;
+    padding: 1rem 1rem 1rem 3rem;
+}
+
+
+/* user section customization */
+
+.user{
+    display: none;
+}
+
+.user.active{
+    display: flex;
+}
+
+/* dropdown menu for select languages */
+
+.menu{
+    display: flex;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropdown-item{
+    display: none;
+    position: absolute;
+    background-color: #696FC7;
+    padding: 1rem 0 0 0;
+    z-index: 1;
+}
+
+.dropdown-item a{
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+.dropdown-item a:hover{
+    background-color: white;
+    color: #696FC7;
+}
+
+.dropdown:hover .dropdown-item{
+    display: block;
+}

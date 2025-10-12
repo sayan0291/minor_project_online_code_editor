@@ -1,0 +1,39 @@
+
+.maincontainer{
+    display: grid;
+    justify-content: center;
+    padding: 3rem 0;
+    grid-template-columns: 14.6rem 14.6rem 14.6rem;
+    grid-template-rows: 7rem 7rem 7rem;
+    gap: 2rem;
+}
+
+
+.border-style{
+    border: 2px solid rgb(40, 164, 209);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 1px rgb(167, 212, 228);
+    padding: 1rem 0;
+    gap: 1rem;
+}
+
+
+h3{
+    color: rgb(16, 16, 194);
+    font-family: geometric sans-serif;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+
+img{
+    height: 70%;
+    width: 30%;
+    border-radius: 5px;
+    box-shadow:3px 3px 3px 2px rgb(0 , 0 , 0, 0.2);
+    transition: transform 0.3s;
+}
+
+img:hover{
+    transform: translateY(-2px);
+}

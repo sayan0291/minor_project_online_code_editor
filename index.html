@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Code Editor</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./src/css/index.css">
     <script src="https://kit.fontawesome.com/ef6b52ae9e.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="container1">
-        <h3><a href="#homepage">logo</a></h3>
+        <a href="#homepage"><img src="src/css/components/images/logo.png" alt="logo-img"></a>
         <div class="menu">
             <div class="dropdown button-hover">
                 <h4>Select Languages</h4>
@@ -40,39 +40,39 @@
     <div class="scrolesection section" id="homepage">
         <div class="maincontainer" id="maincontainerid">
             <div class="border-style align-center">
-                <img src="images/html-css-js.png" alt="html_css_js">
+                <img src="src/css/components/images/html-css-js.png" alt="html_css_js">
                 <h3>html css js</h3>
             </div>
             <div class="border-style align-center">
-                <img src="images/python.png" alt="python">
+                <img src="src/css/components/images/python.png" alt="python">
                 <h3>python</h3>
             </div>
             <div class="border-style align-center">
-                <img src="images/java.png" alt="java">
+                <img src="src/css/components/images/java.png" alt="java">
                 <h3>java</h3>
             </div>
             <div class="border-style align-center">
-                <img src="images/php.png" alt="php">
+                <img src="src/css/components/images/php.png" alt="php">
                 <h3>php</h3>
             </div>
             <div class="border-style align-center">
-                <img src="images/ruby.png" alt="ruby">
+                <img src="src/css/components/images/ruby.png" alt="ruby">
                 <h3>Ruby</h3>
             </div>
             <div class="border-style align-center">
-                <img src="images/c.png" alt="C">
+                <img src="src/css/components/images/c.png" alt="C">
                 <h3>C</h3>
             </div>
             <div class="border-style align-center">
-                <img src="images/C++.png" alt="C++">
+                <img src="src/css/components/images/C++.png" alt="C++">
                 <h3>C++</h3>
             </div>
             <div class="border-style align-center">
-                <img src="images/kotlin.png" alt="kotlin">
+                <img src="src/css/components/images/kotlin.png" alt="kotlin">
                 <h3>Kotlin</h3>
             </div>
             <div class="border-style align-center">
-                <img src="images/javascript.png" alt="js-programming">
+                <img src="src/css/components/images/javascript.png" alt="js-programming">
                 <h3>Javascript</h3>
             </div>
         </div>
@@ -80,30 +80,34 @@
     </div>
 
     <!-- about section  -->
-    <div class="aboutsection align-center section" id="about">
-        <h2 class="h2-styling">About</h2>
-        <p>Our mission is to help users learn programming more easily.</p>
-        <p>We are a small team of passionate developers constantly working to create programming resources that's accurate and easier to understand</p>
-        <p>we understand that creating textual content on the web to learn programming is not enoug</p>
-        <p></p>
+    <div class="section" id="about">
+        <div class="section-content align-center about-section">
+            <h2 class="h2-styling">About</h2>
+            <p>Our mission is to help users learn programming more easily.</p>
+            <p>We are a small team of passionate developers constantly working to create programming resources that's accurate and easier to understand</p>
+            <p>we understand that creating textual content on the web to learn programming is not enoug</p>
+            <p></p>
+        </div>
     </div>
 
     <!-- contact section  -->
-    <div class="section"  id="contact">
-    <div class="contact-us align-center">
-        <h2 class="h2-styling">Contact Us</h2>
-        <form class="align-center">
-            <input type="text" placeholder="Enter Your Name" required>
-            <input type="email" placeholder="Enter Email Address" required>
-            <textarea name="sendmessage" id="send-message" rows="auto" required></textarea>
-            <button>Submit</button>
-        </form>
-    </div>
+    <div class="section align-center" id="contact">
+        <div class="section-content contact-section">
+            <h2 class="h2-styling">Contact Us</h2>
+            <form class="align-center">
+                <input type="text" placeholder="Enter Your Name" required>
+                <input type="email" placeholder="Enter Email Address" required>
+                <textarea name="sendmessage" id="send-message" rows="auto" required></textarea>
+                <button>Submit</button>
+            </form>
+        </div>
     </div>
 
     <!-- share section  -->
-    <div class="share align-center section" id="share">
-        <h2 class="h2-styling">Share</h2>
+    <div class="section" id="share">
+        <div class="section-content align-center share-section">
+            <h2 class="h2-styling">Share</h2>
+        </div>
     </div>
 
     <!-- code write and execution section  -->
@@ -137,8 +141,8 @@
             </div>
         </div>
     </footer>
-    <script src="index.js"></script>
-    <script src="dropdown.js"></script>
-    <script src="login.js"></script>
+    <script src="src/js/modules/index.js"></script>
+    <script src="src/js/modules/dropdown.js"></script>
+    <script src="src/js/modules/login.js"></script>
 </body>
 </html>
