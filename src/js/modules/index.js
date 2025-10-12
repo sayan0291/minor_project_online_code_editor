@@ -8,7 +8,7 @@ function showSection() {
 
     let hash = window.location.hash || "#homepage"; 
 
-    document.querySelector(hash).style.display = "flex";
+    document.querySelector(hash).style.display = "block";
 }
 
 window.addEventListener('hashchange',showSection)
