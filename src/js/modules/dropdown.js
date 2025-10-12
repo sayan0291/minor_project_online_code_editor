@@ -48,5 +48,9 @@ window.addEventListener('DOMContentLoaded', function(){
 });
 
 
-window.addEventListener('hashchange',showlanguage)
+window.addEventListener('hashchange',function (e){
+    if(e.newURL !== e.oldURL){
+        showlanguage();
+    }
+})
 window.addEventListener('load',showlanguage)

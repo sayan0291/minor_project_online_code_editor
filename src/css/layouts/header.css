@@ -52,3 +52,9 @@ header{
 .dropdown:hover .dropdown-item{
     display: block;
 }
+
+@media (max-width: 450px) {
+    header{
+        padding: 1rem;
+    }
+}

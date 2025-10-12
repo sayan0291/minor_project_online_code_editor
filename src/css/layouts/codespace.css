@@ -1,0 +1,23 @@
+.codespace{
+    min-height: 60vh;
+    height: 50%;
+}
+
+.codespace header{
+    border-radius: 0.5rem;
+    margin: 1rem 1rem 0 1rem;
+    padding: 1rem;
+}
+
+.codespace textarea{
+    margin: 1rem;
+    width: 98%;
+    min-height: 50vh;
+    height: 95%;
+}
+
+.fa-solid{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: white;
+}

@@ -8,8 +8,22 @@ function showSection() {
 
     let hash = window.location.hash || "#homepage"; 
 
-    document.querySelector(hash).style.display = "block";
+    let checkhash = document.querySelector(hash);
+    if(!checkhash){
+        alert(`The Section is not available ${checkhash}`)
+        hash = "#homepage";
+        checkhash = document.querySelector(hash);
+
+        window.history.replaceState(null,null,"#homepage")
+    }
+    else{
+        checkhash.style.display = "block";
+    }
 }
 
-window.addEventListener('hashchange',showSection)
+window.addEventListener('hashchange',function (e){
+    if(e.newURL !== e.oldURL){
+        showSection();
+    }
+})
 window.addEventListener('load',showSection)
