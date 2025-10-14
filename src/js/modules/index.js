@@ -1,5 +1,9 @@
 const logo = document.querySelector('.logo');
 const mainpage = document.querySelector('.scrolesection');
+const body = document.querySelector('body')
+
+console.log(body);
+
 
 
 function showSection() {

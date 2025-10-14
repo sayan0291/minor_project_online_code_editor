@@ -44,6 +44,11 @@ h3{
     font-weight: bolder;
 }
 
+h2{
+    font-size: 1.2rem;
+    color: rgb(202, 216, 226);
+}
+
 .h2-styling{
     padding: 1rem;
     margin: 0.5rem;
@@ -67,10 +72,7 @@ p{
     font-weight: bold;
 }
 
-.section-content{
-    width: 60%;
-}
-
-#homepage{
-    display: block;
+.section{
+    display: none;
+    padding: 1rem;
 }

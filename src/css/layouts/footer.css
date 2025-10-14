@@ -14,7 +14,8 @@ footer{
 .morelanguages{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    color:#696FC7;
+    color: cornflowerblue;
     padding: 5px 0;
     gap: 0 1rem;
 }
+
