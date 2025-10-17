@@ -1,56 +1,55 @@
+import { codeeditor } from "../utils/codeeditor.js";
+import { runCode } from "../utils/runcode.js";
+
 const dropdownitems = document.querySelector('.dropdown-item');
-const coderunspace = document.querySelector('#codespaceid');
 const languagename = document.querySelector('#languagename');
+const runbutton = document.querySelector('.fa-play')
 let languagetext;
 
-const language = ["html-css-js","python","java","php","ruby","c","c++","Kotlin","javascript"];
+const languages = ["html-css-js","python","java","php","ruby","c","c++","kotlin","javascript"];
 
-
-function loadsavedlanguage(){
-    const savedlanguage = localStorage.getItem('selectlanguage');
-    if(savedlanguage){
-        languagetext = savedlanguage;
-        languagename.textContent = savedlanguage;
+function loadSavedLanguage(){
+    const saved = localStorage.getItem('selectlanguage');
+    const savedcode = localStorage.getItem('textcode')
+    if(saved){
+        languagetext = saved;
+        languagename.textContent = saved;
+        codeeditor(languagetext);
     }
 }
 
 function dropdown(){
     dropdownitems.addEventListener('click',function (e){
-        language.forEach( (item) => {
-            if(item === e.target.id){
-                setlanguage(item);
-                languagename.textContent = languagetext;
-            }
-        })
-    })
+        const id = e.target.id;
+        if(languages.includes(id)){
+            languagetext = id;
+            localStorage.setItem('selectlanguage',id);
+            languagename.textContent = id;
+            codeeditor(id);
+            document.querySelector(".codespace").style.display = "block";
+            document.querySelector(".codespace").scrollIntoView({ behavior: "smooth" });
+        }
+    });
 }
 
-function setlanguage(lang){
-    localStorage.setItem('selectlanguage',lang);
-    languagetext = lang;
-}
+runbutton.addEventListener('click',async function inputoutput(){
+    const savedcode = localStorage.getItem('textcode')
+    const saved = localStorage.getItem('selectlanguage');
 
-function showlanguage(){
-    const codespace = document.querySelector(".codespace");
-    codespace.style.display = "none";
+    const result = await runCode(savedcode,saved)
 
-    let hash = window.location.hash; 
-
-    document.querySelector(hash).style.display = "block";
-
-    languagename.textContent = languagetext;
-}
-
-window.addEventListener('DOMContentLoaded', function(){
-    loadsavedlanguage();
-    dropdown();
-    showlanguage();
-});
-
-
-window.addEventListener('hashchange',function (e){
-    if(e.newURL !== e.oldURL){
-        showlanguage();
+    const output = document.querySelector("#output")
+    console.log(result);
+    
+    if(result.output){
+        output.textContent = result.output;
+    }
+    if(result.errors){
+        output.textContent = result.errors;
     }
 })
-window.addEventListener('load',showlanguage)
+
+window.addEventListener('DOMContentLoaded', function(){
+    loadSavedLanguage();
+    dropdown();
+});

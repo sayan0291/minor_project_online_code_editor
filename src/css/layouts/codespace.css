@@ -1,6 +1,7 @@
 .codespace{
     display: none;
     height: 100%;
+    padding: 1rem;
 }
 
 .codespace header{
@@ -10,22 +11,25 @@
     background-color: #c7c8dc;
 }
 
-.writecode{
-    height: 100vh;
-    padding: 1rem;
-}
 
-.codespace textarea{
+.cm-editor{
+    height: 65vh;
+    border-radius: 10px;
     margin: 1rem;
+}
+
+.output-section{
+    height: 35vh;
+}
+
+.output-section textarea{
+    height: 31vh;
     width: 98%;
-    height: 60%;
+    margin: 1rem;
+    border: 1px solid rgb(231, 143, 143);
 }
 
-.output{
-    height: 50%;
-}
-
-.output h4{
+.output-section h4{
     padding-left: 1rem;
     color: red;
 }

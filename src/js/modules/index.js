@@ -10,15 +10,15 @@ function showSection() {
     const sections = document.querySelectorAll(".section");
     sections.forEach(sec => sec.style.display = "none");
 
-    let hash = window.location.hash || "#homepage"; 
+    let hash = window.location.hash || "#homepage";
 
     let checkhash = document.querySelector(hash);
     if(!checkhash){
-        alert(`The Section is not available ${checkhash}`)
+        alert(`The Section is not available ${checkhash}`);
         hash = "#homepage";
         checkhash = document.querySelector(hash);
 
-        window.history.replaceState(null,null,"#homepage")
+        window.history.replaceState(null,null,"#homepage");
     }
     else{
         checkhash.style.display = "block";
@@ -30,4 +30,4 @@ window.addEventListener('hashchange',function (e){
         showSection();
     }
 })
-window.addEventListener('load',showSection)
+window.addEventListener('load',showSection);
