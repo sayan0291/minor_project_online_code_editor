@@ -41,12 +41,14 @@ runbutton.addEventListener('click',async function inputoutput(){
     const output = document.querySelector("#output")
     console.log(result);
     
-    if(result.output){
-        output.textContent = result.output;
+
+    if(result.stdout){
+        output.innerHTML = result.stdout;
     }
-    if(result.errors){
-        output.textContent = result.errors;
+    if(result.stderr){
+        output.innerHTML = result.stderr;
     }
+    
 })
 
 window.addEventListener('DOMContentLoaded', function(){

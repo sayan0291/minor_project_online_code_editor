@@ -21,10 +21,12 @@
     height: 35vh;
 }
 
-.output-section textarea{
+.outputarea{
     height: 29vh;
     width: 98%;
     margin: 1rem;
+    padding: 1rem;
+    color: black;
     border: 1px solid rgb(231, 143, 143);
 }
 
