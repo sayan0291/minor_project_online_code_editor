@@ -19,6 +19,10 @@
         grid-template-rows: 1fr 1fr;
         gap: 1rem;
     }
+
+    .codespace{
+        padding: 0;
+    }
 }
 
 

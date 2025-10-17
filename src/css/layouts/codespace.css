@@ -1,7 +1,6 @@
 .codespace{
     display: none;
     height: 100%;
-    padding: 1rem;
 }
 
 .codespace header{
@@ -23,7 +22,7 @@
 }
 
 .output-section textarea{
-    height: 31vh;
+    height: 29vh;
     width: 98%;
     margin: 1rem;
     border: 1px solid rgb(231, 143, 143);
