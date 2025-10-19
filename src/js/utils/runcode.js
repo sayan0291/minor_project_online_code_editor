@@ -14,7 +14,7 @@ export async function runCode(code, language) {
     console.log(language);
     
     try {
-        const response = await fetch("https://judge0-ce.p.rapidapi.com/submissions?base64_encoded=false&wait=true", {
+        const response = await fetch("https://judge0-ce.p.rapidapi.com/submissions?base64_encoded=true&wait=true", {
             method: "POST",
             headers: { "Content-Type": "application/json",
                 "x-rapidapi-key": "e0b5a72f50msh41e8e415b3e3d41p19dd15jsn52aa5e4144c8",
@@ -22,7 +22,7 @@ export async function runCode(code, language) {
             },
             body: JSON.stringify({
                 language_id: language_code,
-                source_code: code
+                source_code: btoa(unescape(encodeURIComponent(code)))
             })
         });
 

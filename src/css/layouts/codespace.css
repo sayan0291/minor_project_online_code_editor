@@ -1,11 +1,12 @@
 .codespace{
     display: none;
     height: 100%;
+    padding: 1rem;
 }
 
 .codespace header{
     border-radius: 0.5rem;
-    margin: 1rem 1rem 0 1rem;
+    margin: 1rem;
     padding: 1rem;
     background-color: #c7c8dc;
 }
@@ -14,7 +15,7 @@
 .cm-editor{
     height: 65vh;
     border-radius: 10px;
-    margin: 1rem;
+    font-size: large;
 }
 
 .output-section{
@@ -23,15 +24,18 @@
 
 .outputarea{
     height: 29vh;
-    width: 98%;
-    margin: 1rem;
+    width: 100%;
     padding: 1rem;
+    font-size: 1rem;
     color: black;
     border: 1px solid rgb(231, 143, 143);
+    white-space: pre-wrap;
+    overflow-y: auto;
+    box-sizing: border-box;
 }
 
 .output-section h4{
-    padding-left: 1rem;
+    padding: 1rem;
     color: red;
 }
 

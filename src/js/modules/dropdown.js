@@ -1,5 +1,6 @@
 import { codeeditor } from "../utils/codeeditor.js";
 import { runCode } from "../utils/runcode.js";
+import { formatErrorMessage } from "../utils/formaterrormessage.js";
 
 const dropdownitems = document.querySelector('.dropdown-item');
 const languagename = document.querySelector('#languagename');
@@ -43,12 +44,11 @@ runbutton.addEventListener('click',async function inputoutput(){
     
 
     if(result.stdout){
-        output.innerHTML = result.stdout;
+        output.innerHTML =(atob(result.stdout).replace(/\n/g,"<br>"));
     }
-    if(result.stderr){
-        output.innerHTML = result.stderr;
+    if(result.stderr || result.compile_output){
+        output.innerHTML = formatErrorMessage(atob(result.stderr || result.compile_output)).replace(/\n/g,"<br>");
     }
-    
 })
 
 window.addEventListener('DOMContentLoaded', function(){

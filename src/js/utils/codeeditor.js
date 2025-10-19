@@ -42,7 +42,7 @@ export function codeeditor(language) {
   texteditor.innerHTML = "";
 
   const startState = EditorState.create({
-    doc: `// ${language.toUpperCase()} Example\n`,
+    doc: ``,
     extensions: [
       lineNumbers(),
       highlightActiveLineGutter(),
