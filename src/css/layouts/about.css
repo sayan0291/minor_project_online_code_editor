@@ -1,13 +1,33 @@
 .about-position{
     position: absolute;
     color: #421bd0;
-    top: -80%;
+    top: -100%;
     left: 40%;
 }
 
-@media (max-width: 670px) {
-
-    .other-section{
-        height: 60vh !important;
+@media (max-width: 660px) {
+    .about-position{
+        top: -50% !important;
     }
 }
+
+@media (max-width: 470px){
+    .about-position{
+        top: -30% !important;
+    }
+}
+
+@media (max-width: 415px) {
+    .about-position{
+        top: -20% !important;
+    }
+}
+
+@media (max-width: 375px) {
+    .about-position{
+        top: -45% !important;
+        left: 0;
+    }  
+}
+
+
