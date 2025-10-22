@@ -5,7 +5,9 @@
 @import url("../css/layouts/contact.css");
 @import url("../css/layouts/share.css");
 @import url("../css/layouts/responsive.css"); 
-@import url("../css/layouts/codespace.css"); 
+@import url("../css/layouts/codespace.css");
+@import url("../css/layouts/button.css");
+@import url("../css/layouts/allsection.css");
 
 *{
     padding: 0;
@@ -18,61 +20,8 @@ body{
     background: rgb(240, 233, 233);
 }
 
-.button-hover h4,h4 a{
-    text-decoration: none;
-	color: aliceblue;
-    font-family: geometric sans-serif;
-    transition: transform 0.1s;
-	cursor: pointer;
-    padding: 0 0.4rem;
-}
-
-.button-hover h4:hover{
-	color: #bebfe6;
-    transform: translateY(-0.5px);
-}
-
-.button-hover h4 a:hover{
-	color: #bebfe6;
-    transform: translateY(-0.5px);
-}
-
-h3{
-    color: rgb(16, 16, 194);
-    font-family: geometric sans-serif;
-    font-size: 1rem;
-    font-weight: bolder;
-}
 
 h2{
     font-size: 1.2rem;
     color: rgb(202, 216, 226);
-}
-
-.h2-styling{
-    padding: 1rem;
-    margin: 0.5rem;
-    font-family: sans-serif;
-    color: #15015B;
-}
-
-.align-center{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-
-p{
-    margin: 0.5rem;
-    color: #696FC7;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-}
-
-.section{
-    display: none;
-    padding: 1rem;
 }

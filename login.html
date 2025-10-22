@@ -145,26 +145,20 @@
         signup.classList.add('active')
     })
 
-    button.addEventListener('click',function (){
-        signinvalidity();
-    })
-
-    async function signinvalidity() {
+    button.addEventListener('click',function (signinvalidity){
         const passwordvalue = signuppassword.value;
         const confirmpasswordvalue = confirmpassword.value;
         
 
         if(!signupemail.checkValidity()){
-            form.preventDefault();
-            alert("email not valid");
+            signinvalidity.preventDefault();
         }else if(passwordvalue !== confirmpasswordvalue){
-            form.preventDefault();
-            alert("not matched");
+            signinvalidity.preventDefault()
         }else{
-            // form.preventDefault();
+            signinvalidity.preventDefault()
             window.location.replace('index.html');
         }
-    }
-
+    })
+    
 </script>
 </html>

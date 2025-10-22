@@ -11,7 +11,6 @@ const languages = ["html-css-js","python","java","php","ruby","c","c++","kotlin"
 
 function loadSavedLanguage(){
     const saved = localStorage.getItem('selectlanguage');
-    const savedcode = localStorage.getItem('textcode')
     if(saved){
         languagetext = saved;
         languagename.textContent = saved;
@@ -40,9 +39,7 @@ runbutton.addEventListener('click',async function inputoutput(){
     const result = await runCode(savedcode,saved)
 
     const output = document.querySelector("#output")
-    console.log(result);
     
-
     if(result.stdout){
         output.innerHTML =(atob(result.stdout).replace(/\n/g,"<br>"));
     }

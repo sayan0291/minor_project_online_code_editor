@@ -1,0 +1,13 @@
+.about-position{
+    position: absolute;
+    color: #421bd0;
+    top: -80%;
+    left: 40%;
+}
+
+@media (max-width: 670px) {
+
+    .other-section{
+        height: 60vh !important;
+    }
+}

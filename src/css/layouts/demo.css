@@ -26,7 +26,7 @@ h3{
 }
 
 
-img{
+.maincontainer img{
     height: 70%;
     width: 30%;
     border-radius: 5px;
@@ -34,6 +34,13 @@ img{
     transition: transform 0.3s;
 }
 
-img:hover{
+.maincontainer img:hover{
     transform: translateY(-2px);
+}
+
+h3{
+    color: rgb(16, 16, 194);
+    font-family: geometric sans-serif;
+    font-size: 1rem;
+    font-weight: bolder;
 }
