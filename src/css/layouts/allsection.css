@@ -1,5 +1,5 @@
 .h2-styling{
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 
 .align-center{
@@ -28,125 +28,61 @@
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     object-position: center;
     z-index: 0;
 }
 
 .section-content{
     position: absolute;
+    align-items: center;
     text-align: center;
-    max-width: 400px;
+    backdrop-filter: blur(2px);
+    max-width: 700px;
 }
 
-@media (max-width: 660px) {
-
-    .other-section{
-        height: 60vh !important;
-    }
-    .section-content{
-        max-width: 350px !important;
-    }
+p{
+    font-size: 1.5rem;
+    color: rgb(171, 177, 232);
+    font-weight: 500;
+    opacity: 5;
 }
 
-@media (max-width: 560px) {
-
-    .other-section{
-        height: 50vh !important;
-    }
-
+@media (max-width: 768px) {
     .section-content{
-        max-width: 330px !important;
-    }
-}
-@media (max-width: 470px) {
-
-    .other-section{
-        height: 44vh !important;
+        max-width: 450px !important;
     }
 
-    .section-content{
-        max-width: 300px !important;
-    }
+    .h2-styling{
+        font-size: 1.5rem;
+    }    
 
     p{
         font-size: 1.1rem;
     }
 }
 
-@media (max-width: 415px) {
-
-    .other-section{
-        height: 40vh !important;
-    }
-
+@media (max-width: 425px) {
     .section-content{
-        max-width: 270px !important;
+        max-width: 380px !important;
     }
 
     .h2-styling{
-        font-size: 1.5rem !important;
+        font-size: 1.6rem;
     }
+    
 
     p{
         font-size: 1rem;
     }
 }
 
-@media (max-width: 375px) {
-
-    .other-section{
-        height: 35vh !important;
-    }
-
+@media (max-width: 450px) {
     .section-content{
-        max-width: 230px !important;
-    }
-
-    .h2-styling{
-        font-size: 1.2rem !important;
+        max-width: 350px !important;
     }
 
     p{
-        font-size: 0.7rem;
+        font-size: 1.1rem;
     }
 }
-
-@media (max-width: 335px) {
-
-    .other-section{
-        height: 30vh !important;
-    }
-
-    .section-content{
-        max-width: 200px !important;
-    }
-
-    .h2-styling{
-        font-size: 1rem !important;
-    }
-
-    p{
-        font-size: 0.6rem;
-    }
-}
-
-@media (max-width: 300px) {
-
-    .other-section{
-        height: 25vh !important;
-    }
-
-    .section-content{
-        max-width: 170px !important;
-    }
-
-    .h2-styling{
-        font-size: 0.9rem !important;
-    }
-
-    p{
-        font-size: 0.4rem;
-    }
-}
-

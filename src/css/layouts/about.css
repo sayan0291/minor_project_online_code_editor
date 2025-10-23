@@ -1,33 +1,5 @@
 .about-position{
-    position: absolute;
-    color: #421bd0;
-    top: -100%;
-    left: 40%;
+    padding: 1rem;
+    background-color: transparent;
+    color: rgb(70, 108, 45);
 }
-
-@media (max-width: 660px) {
-    .about-position{
-        top: -50% !important;
-    }
-}
-
-@media (max-width: 470px){
-    .about-position{
-        top: -30% !important;
-    }
-}
-
-@media (max-width: 415px) {
-    .about-position{
-        top: -20% !important;
-    }
-}
-
-@media (max-width: 375px) {
-    .about-position{
-        top: -45% !important;
-        left: 0;
-    }  
-}
-
-
