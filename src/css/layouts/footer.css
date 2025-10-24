@@ -19,3 +19,9 @@ footer{
     gap: 0 1rem;
 }
 
+
+
+a{
+    text-decoration: none;
+    color: cadetblue;
+}

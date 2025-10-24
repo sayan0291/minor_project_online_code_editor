@@ -38,6 +38,7 @@
     align-items: center;
     text-align: center;
     backdrop-filter: blur(2px);
+    background-color: transparent;
     max-width: 700px;
 }
 
@@ -48,41 +49,3 @@ p{
     opacity: 5;
 }
 
-@media (max-width: 768px) {
-    .section-content{
-        max-width: 450px !important;
-    }
-
-    .h2-styling{
-        font-size: 1.5rem;
-    }    
-
-    p{
-        font-size: 1.1rem;
-    }
-}
-
-@media (max-width: 425px) {
-    .section-content{
-        max-width: 380px !important;
-    }
-
-    .h2-styling{
-        font-size: 1.6rem;
-    }
-    
-
-    p{
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 450px) {
-    .section-content{
-        max-width: 350px !important;
-    }
-
-    p{
-        font-size: 1.1rem;
-    }
-}

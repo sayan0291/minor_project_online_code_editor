@@ -1,4 +1,4 @@
-@media (max-width:768px) {
+@media (max-width:769px) {
     .maincontainer{
         padding: 1rem 4rem;
         grid-template-columns: 1fr 1fr;
@@ -9,15 +9,31 @@
     form{
         width: 60vw;
     }
+
+    .section-content{
+        max-width: 450px !important;
+    }
+
+    .h2-styling{
+        font-size: 1.5rem;
+    }    
+
+    p{
+        font-size: 1.1rem;
+    }
 }
 
 
-@media (max-width:425px) {
+@media (max-width:426px) {
     .maincontainer{
         padding: 1rem 1rem;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         gap: 1rem;
+    }
+
+    form{
+        width: 75vw;
     }
 
     .codespace{
@@ -27,10 +43,27 @@
     .output-section textarea{
         width: 95%;
     }
+
+    .section{
+        padding: 0.5rem !important;
+    }
+
+    .section-content{
+        max-width: 380px !important;
+    }
+
+    .h2-styling{
+        font-size: 1.6rem !important;
+    }
+    
+
+    p{
+        font-size: 1.3rem !important;
+    }
 }
 
 
-@media (max-width:375px){
+@media (max-width:376px){
     .maincontainer{
         display: grid;
         justify-content: center;
@@ -39,9 +72,29 @@
         grid-template-rows: 1fr 1fr;
         gap: 0.5rem;
     }
+
+    .button-hover h4, h4 a{
+        font-size: 0.8rem;
+    }
+
+    form{
+        width: 75vw;
+    }
+
+    .section{
+        padding: 0.3rem !important;
+    }
+
+    .section-content{
+        max-width: 350px !important;
+    }
+
+    p{
+        font-size: 1.3rem !important;
+    }
 }
 
-@media (max-width:320px) {
+@media (max-width:321px) {
     .maincontainer{
         padding: 0.4rem;
         grid-template-columns: 1fr 1fr;
@@ -59,8 +112,16 @@
         font-size: 0.8rem;
     }
 
-    .button-hover h4, h4 a{
-        font-size: 0.8rem;
+    form{
+        width: 85vw !important;
+    }
+
+    .section-content{
+        max-width: 330px !important;
+    }
+
+    p{
+        font-size: 1.1rem !important;
     }
 }
 
