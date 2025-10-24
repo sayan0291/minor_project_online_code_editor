@@ -74,7 +74,11 @@
     }
 
     .button-hover h4, h4 a{
-        font-size: 0.8rem;
+        font-size: 1rem;
+    }
+
+    h2{
+        font-size: 1rem !important;
     }
 
     form{
