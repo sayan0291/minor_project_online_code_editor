@@ -2,7 +2,7 @@ const logo = document.querySelector('.logo');
 const mainpage = document.querySelector('.scrolesection');
 const body = document.querySelector('body')
 
-console.log(body);
+let user = JSON.parse(localStorage.getItem('userarray')) || [];
 
 
 
@@ -30,4 +30,7 @@ window.addEventListener('hashchange',function (e){
         showSection();
     }
 })
-window.addEventListener('load',showSection);
+
+window.addEventListener('load', function() {
+    showSection();
+});

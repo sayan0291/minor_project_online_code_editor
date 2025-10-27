@@ -110,14 +110,14 @@
                 <input type="email" id="sign-up-email" placeholder="Email" required>
                 <input type="password" id="sign-up-password" placeholder="Password" required>
                 <input type="password" id="confirm-password" placeholder="confirm Password" required>
-                <button class="button">Create Account</button>
+                <button type="submit" class="button">Create Account</button>
                 <p>already have an account ? <i id="show-login">Login</i></p>
             </form>
             <form class="form" id="sign-in">
                 <h2>Log-In</h2>
                 <input type="email" id="login-email" placeholder="Email" required>
                 <input type="password" id="login-password" placeholder="Password" required>
-                <button class="button">log in</button>
+                <button type="submit" class="button">log in</button>
                 <p>create a account ? <i id="show-sign-up">Sign-up</i></p>
             </form>
         </div>
@@ -131,8 +131,28 @@
     const signupemail = document.querySelector('#sign-up-email')
     const signuppassword = document.querySelector('#sign-up-password')
     const confirmpassword = document.querySelector('#confirm-password')
-    const form = document.getElementsByTagName('form');
     const button = document.querySelector('.button')
+
+    let userarray = JSON.parse(localStorage.getItem('userarray')) || [];
+
+    class users{
+        constructor(email,password){
+            this.id = Math.floor(Math.random() * 10000 + 1);
+            this.email = email;
+            this.password = password;
+        }
+
+        userdeatails(){
+            let obj = {
+                id: this.id,
+                email: this.email,
+                password: this.password
+            }
+            userarray.push(obj);
+
+            localStorage.setItem("userarray",JSON.stringify(userarray));
+        }
+    }
 
 
     showlogin.addEventListener('click', function (){
@@ -148,14 +168,27 @@
     button.addEventListener('click',function (signinvalidity){
         const passwordvalue = signuppassword.value;
         const confirmpasswordvalue = confirmpassword.value;
-        
+        const emailvalue = signupemail.value;
 
         if(!signupemail.checkValidity()){
             signinvalidity.preventDefault();
+            alert('Please enter a valid email address');
         }else if(passwordvalue !== confirmpasswordvalue){
             signinvalidity.preventDefault()
+            alert('Passwords do not match');
+        }else if(passwordvalue.length < 1){
+            signinvalidity.preventDefault()
+            alert('Password must be at least 6 characters long');
         }else{
             signinvalidity.preventDefault()
+            
+            const newuser = new users(emailvalue,passwordvalue);
+            console.log(newuser.userdeatails());
+            
+
+            localStorage.setItem('isLoggedIn', 'true');
+            
+            alert('Account created successfully! You are now logged in.');
             window.location.replace('index.html');
         }
     })

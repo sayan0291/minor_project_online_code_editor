@@ -33,7 +33,7 @@ function dropdown(){
 }
 
 runbutton.addEventListener('click',async function inputoutput(){
-    const savedcode = localStorage.getItem('textcode')
+    const savedcode = localStorage.getItem('textcode');
     const saved = localStorage.getItem('selectlanguage');
 
     const result = await runCode(savedcode,saved)
