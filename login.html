@@ -110,14 +110,14 @@
                 <input type="email" id="sign-up-email" placeholder="Email" required>
                 <input type="password" id="sign-up-password" placeholder="Password" required>
                 <input type="password" id="confirm-password" placeholder="confirm Password" required>
-                <button type="submit" class="button">Create Account</button>
+                <button type="submit" class="buttonsignin">Create Account</button>
                 <p>already have an account ? <i id="show-login">Login</i></p>
             </form>
             <form class="form" id="sign-in">
                 <h2>Log-In</h2>
                 <input type="email" id="login-email" placeholder="Email" required>
                 <input type="password" id="login-password" placeholder="Password" required>
-                <button type="submit" class="button">log in</button>
+                <button type="submit" class="buttonlogin">log in</button>
                 <p>create a account ? <i id="show-sign-up">Sign-up</i></p>
             </form>
         </div>
@@ -131,9 +131,14 @@
     const signupemail = document.querySelector('#sign-up-email')
     const signuppassword = document.querySelector('#sign-up-password')
     const confirmpassword = document.querySelector('#confirm-password')
-    const button = document.querySelector('.button')
+    const loginemail = document.querySelector('#login-email')
+    const loginpassword = document.querySelector('#login-password')
+    const buttonsignin = document.querySelector('.buttonsignin')
+    const buttonlogin = document.querySelector('.buttonlogin')
 
-    let userarray = JSON.parse(localStorage.getItem('userarray')) || [];
+    let userarray = JSON.parse(localStorage.getItem('userarray')) || []
+    
+    
 
     class users{
         constructor(email,password){
@@ -165,31 +170,60 @@
         signup.classList.add('active')
     })
 
-    button.addEventListener('click',function (signinvalidity){
+    buttonsignin.addEventListener('click',function (signinvalidity){
         const passwordvalue = signuppassword.value;
         const confirmpasswordvalue = confirmpassword.value;
         const emailvalue = signupemail.value;
+        const existingUser = userarray.find((item) => item.email === emailvalue);
+
+        signinvalidity.preventDefault();
 
         if(!signupemail.checkValidity()){
-            signinvalidity.preventDefault();
             alert('Please enter a valid email address');
+            return;
         }else if(passwordvalue !== confirmpasswordvalue){
-            signinvalidity.preventDefault()
             alert('Passwords do not match');
-        }else if(passwordvalue.length < 1){
-            signinvalidity.preventDefault()
+            return;
+        }else if(passwordvalue.length < 6){
             alert('Password must be at least 6 characters long');
+            return;
+        }else if(existingUser){
+            alert(`This Email is Already Exist`);
+            return;
         }else{
-            signinvalidity.preventDefault()
-            
             const newuser = new users(emailvalue,passwordvalue);
-            console.log(newuser.userdeatails());
+            newuser.userdeatails();
             
 
             localStorage.setItem('isLoggedIn', 'true');
-            
+            localStorage.setItem('currentUser', JSON.stringify(newuser));
             alert('Account created successfully! You are now logged in.');
             window.location.replace('index.html');
+        }
+    })
+
+    buttonlogin.addEventListener('click',function (loginvalidity){
+        const passwordvalue = loginpassword.value;
+        const emailvalue = loginemail.value;
+        const existingUser = userarray.find( (item) => item.email === emailvalue )
+
+
+        loginvalidity.preventDefault();
+        if(!loginemail.checkValidity()){
+            alert(`Enter a Valid Email Address`);
+            return;
+        }else if(!existingUser){
+            alert(`The Email is Not Logged In`);
+            return;
+        }else if(existingUser){
+            if(existingUser.password === passwordvalue){
+                localStorage.setItem('isLoggedIn', 'true');
+                localStorage.setItem('currentUser', JSON.stringify(existingUser));
+                window.location.replace('index.html');
+            }else{
+                alert(`Password is Incorrect`)
+                return;
+            }
         }
     })
     
