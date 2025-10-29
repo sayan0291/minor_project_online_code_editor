@@ -141,9 +141,6 @@
     const buttonlogin = document.querySelector('.buttonlogin')
 
     let userarray = JSON.parse(localStorage.getItem('userarray')) || []
-    console.log(userarray);
-    
-    
     
 
     class users{
@@ -244,18 +241,6 @@
                 alert(`Password is Incorrect`)
                 return;
             }
-        }
-    })
-
-    window.addEventListener('DOMContentLoaded',function (){
-        const loginpage = localStorage.getItem('logview')
-
-        if(loginpage === 'signin'){
-            signin.classList.remove('active')
-            signup.classList.add('active')
-        }else{
-            signup.classList.remove('active')
-            signin.classList.add('active')
         }
     })
     
