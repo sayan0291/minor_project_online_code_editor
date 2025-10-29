@@ -3,13 +3,16 @@ window.addEventListener('DOMContentLoaded', function(){
     const logoutbutton = document.querySelector('#log-out');
     let logout = document.querySelector('#toogle-log-out');
     let login = document.querySelector('#toogle-log-in');
-    // const username = document.querySelector('.username');
-    // const email = document.querySelector('.email');
+    const username = document.querySelector('.username');
+    const email = document.querySelector('.email');
     
     const isLoggedIn = localStorage.getItem('isLoggedIn');
     const currentUser = JSON.parse(localStorage.getItem('currentUser'));
-    // username.textContent = `Username: ${currentUser.username}`
-    // email.textContent = `Email: ${currentUser.email}`
+    
+    if(currentUser){
+        username.textContent = `Username: ${currentUser.username}`
+        email.textContent = `Email: ${currentUser.email}`
+    }
     
     if(isLoggedIn === 'true'){
         login.classList.remove('active');
