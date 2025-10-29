@@ -1,5 +1,6 @@
 .codespace{
     display: none;
+    height: 100vh;
 }
 
 .codespace header{
@@ -11,13 +12,13 @@
 
 
 .cm-editor{
-    height: 58vh;
+    height: 57vh;
     border-radius: 10px;
     font-size: large;
 }
 
 .output-section{
-    height: 20vh;
+    height: 22vh;
 }
 
 .outputarea{

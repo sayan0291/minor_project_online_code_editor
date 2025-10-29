@@ -5,6 +5,10 @@
         grid-template-rows:1fr 1fr;
         gap: 1.5rem;
     }
+
+    .cm-editor{
+        height: 55vh !important;
+    }
     
     form{
         width: 60vw;
@@ -20,6 +24,10 @@
 
     p{
         font-size: 1.1rem;
+    }
+
+    h3{
+        font-size: 1.1rem !important;
     }
 }
 
@@ -38,6 +46,10 @@
 
     .codespace{
         padding: 0;
+    }
+
+    .cm-editor{
+        height: 58vh !important;
     }
 
     .output-section textarea{

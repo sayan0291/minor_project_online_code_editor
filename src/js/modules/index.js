@@ -1,10 +1,7 @@
 const logo = document.querySelector('.logo');
-const mainpage = document.querySelector('.scrolesection');
-const body = document.querySelector('body')
+
 
 let user = JSON.parse(localStorage.getItem('userarray')) || [];
-
-
 
 function showSection() {
     const sections = document.querySelectorAll(".section");
