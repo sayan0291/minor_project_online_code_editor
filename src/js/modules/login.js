@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded', function(){
     const isLoggedIn = localStorage.getItem('isLoggedIn');
     const currentUser = JSON.parse(localStorage.getItem('currentUser'));
     username.textContent = `Username: ${currentUser.username}`
-    email.textContent = `Username: ${currentUser.email}`
+    email.textContent = `Email: ${currentUser.email}`
     
     if(isLoggedIn === 'true'){
         login.classList.remove('active');
