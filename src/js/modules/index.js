@@ -1,7 +1,11 @@
+import { scrolesection } from "./scrole-section.js";
+
 const logo = document.querySelector('.logo');
 
 
 let user = JSON.parse(localStorage.getItem('userarray')) || [];
+console.log(user);
+
 
 function showSection() {
     const sections = document.querySelectorAll(".section");
@@ -30,4 +34,5 @@ window.addEventListener('hashchange',function (e){
 
 window.addEventListener('load', function() {
     showSection();
+    scrolesection();
 });

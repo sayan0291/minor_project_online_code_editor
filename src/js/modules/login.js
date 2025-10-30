@@ -22,7 +22,7 @@ window.addEventListener('DOMContentLoaded', function(){
     } else {
         logout.classList.remove('active');
         login.classList.add('active');
-    }
+    }+
     
     logoutbutton.addEventListener('click', function(){
         localStorage.setItem('isLoggedIn', 'false');

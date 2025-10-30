@@ -19,10 +19,11 @@
 body{
     width: 100%;
     background: rgb(240, 233, 233);
+    overflow-x: hidden;
 }
 
 
 h2{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: rgb(202, 216, 226);
 }

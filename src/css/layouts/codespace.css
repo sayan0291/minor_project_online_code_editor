@@ -1,5 +1,6 @@
 .codespace{
     display: none;
+    padding: 1rem !important;
     height: 100vh;
 }
 

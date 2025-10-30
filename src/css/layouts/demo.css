@@ -1,46 +1,79 @@
 
 .maincontainer{
-    display: grid;
-    justify-content: center;
-    padding: 3rem 0;
-    grid-template-columns: 14.6rem 14.6rem 14.6rem;
-    grid-template-rows: 7rem 7rem 7rem;
-    gap: 2rem;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    height: 100vh;
+    width: 100vw;
+    scroll-behavior: smooth;
 }
 
-
-.border-style{
-    border: 2px solid rgb(40, 164, 209);
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px 1px rgb(167, 212, 228);
-    padding: 1rem 0;
-    gap: 1rem;
+.scroll-section{
+    flex: 0 0 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vw;
+    scroll-snap-type: start;
+    background: linear-gradient(135deg, red,blue);
 }
 
-
-h3{
-    color: rgb(16, 16, 194);
-    font-family: geometric sans-serif;
-    font-size: 1rem;
-    font-weight: bolder;
+.scroll-section img{
+    width: 40%;
+    max-width: 500px;
+    height: auto;
 }
 
-
-.maincontainer img{
-    height: 70%;
-    width: 30%;
-    border-radius: 5px;
-    box-shadow:3px 3px 3px 2px rgb(0 , 0 , 0, 0.2);
-    transition: transform 0.3s;
+.text{
+    width: 50%;
 }
 
-.maincontainer img:hover{
-    transform: translateY(-2px);
+.text h1{
+    color: aqua;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
 }
 
-h3{
-    color: rgb(16, 16, 194);
-    font-family: geometric sans-serif;
-    font-size: 1rem;
-    font-weight: bolder;
+.text p{
+    line-height: 1.8;
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.nav-button{
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: black;
+    cursor: pointer;
+    padding: 15px 20px;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.nav-button:hover{
+    background-color: rgba(255, 255, 255, 1);
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+#prev{
+    left: 20px;
+}
+
+#next{
+    right: 20px;
 }

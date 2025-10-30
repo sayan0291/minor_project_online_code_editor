@@ -1,10 +1,4 @@
 @media (max-width:769px) {
-    .maincontainer{
-        padding: 1rem 4rem;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows:1fr 1fr;
-        gap: 1.5rem;
-    }
 
     .cm-editor{
         height: 55vh !important;
@@ -33,13 +27,6 @@
 
 
 @media (max-width:426px) {
-    .maincontainer{
-        padding: 1rem 1rem;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 1rem;
-    }
-
     form{
         width: 75vw;
     }
@@ -76,14 +63,6 @@
 
 
 @media (max-width:376px){
-    .maincontainer{
-        display: grid;
-        justify-content: center;
-        padding: 1rem 0.5rem;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 0.5rem;
-    }
 
     .button-hover h4, h4 a{
         font-size: 1rem;
@@ -111,12 +90,6 @@
 }
 
 @media (max-width:321px) {
-    .maincontainer{
-        padding: 0.4rem;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 0.5rem;
-    }
 
     footer{
         font-size: 0.7rem;
