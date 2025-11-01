@@ -1,4 +1,5 @@
 export function scrolesection(){
+    const maincontainer = document.querySelector('.maincontainer')
     const prevarrow = document.querySelector('#prev')
     const nextarrow = document.querySelector('#next')
     // Get only the scroll sections, not the buttons

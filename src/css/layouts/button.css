@@ -1,7 +1,6 @@
 .button-hover h4,h4 a{
     text-decoration: none;
 	color: #D3D3FF;
-    font-size: 1.4rem;
     font-family: geometric sans-serif;
     transition: transform 0.1s;
 	cursor: pointer;
@@ -16,4 +15,8 @@
 .button-hover h4 a:hover{
 	color: #bebfe6;
     transform: translateY(-0.5px);
+}
+
+.button-hover-floating{
+    font-size: 1.5rem;
 }

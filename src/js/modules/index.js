@@ -35,4 +35,5 @@ window.addEventListener('hashchange',function (e){
 window.addEventListener('load', function() {
     showSection();
     scrolesection();
+    hologram();
 });

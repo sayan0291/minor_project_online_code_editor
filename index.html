@@ -11,7 +11,7 @@
     <header class="container1">
         <a href="#homepage"><img src="src/css/components/images/logo.png" alt="logo-img" loading="eager" href="#homepage"></a>
         <div class="menu">
-            <div class="dropdown button-hover">
+            <div class="dropdown button-hover button-hover-floating">
                 <h4>Select Languages</h4>
                 <div class="dropdown-item">
                     <a href="#codespaceid" id="python">Python</a>
@@ -24,11 +24,11 @@
                     <a href="#codespaceid" id="javascript">JavaScript</a>
                 </div>
             </div>
-            <div class="user button-hover" id="toogle-log-out">
+            <div class="user button-hover button-hover-floating" id="toogle-log-out">
                 <h4><a class="activeuser" href="#user">User</a></h4>
                 <h4 id="log-out">Logout</h4>
             </div>
-            <div class="user button-hover active" id="toogle-log-in">
+            <div class="user button-hover button-hover-floating active" id="toogle-log-in">
                 <h4 id="log-in">Login</h4>
             </div>
         </div>
@@ -39,65 +39,66 @@
     <div class="section" id="homepage">
         <div class="maincontainer" id="maincontainerid">
             <section class="scroll-section">
-                <img src="./src/css/components/images/python.png" alt="Python">
+                <img class="floating" src="./src/css/components/images/python.png" alt="Python">
                 <div class="text">
                     <h1>Python</h1>
-                    <p>Python is a high-level, interpreted programming language known for its simplicity and readability. It's widely used for web development, data science, artificial intelligence, and automation. Python's clean syntax makes it perfect for beginners and professionals alike.</p>
+                    <p>Python is a high-level, interpreted programming language known for its simplicity and readability. It's widely used for web development, data science, artificial intelligence, and automation. Python's clean syntax makes it perfect for beginners and professionals alike.<a href="https://developer.mozilla.org/en-US/docs/Glossary/Python" target="_blank">more....</a></p>
                 </div>
             </section>
             <section class="scroll-section">
-                <img src="./src/css/components/images/java.png" alt="Java">
+                <img class="floating" src="./src/css/components/images/java.png" alt="Java">
                 <div class="text">
                     <h1>Java</h1>
-                    <p>Java is a robust, object-oriented programming language that runs on the Java Virtual Machine (JVM). It's the foundation for millions of applications, from enterprise software to Android apps. Java's "write once, run anywhere" philosophy makes it incredibly versatile.</p>
+                    <p>Java is a robust, object-oriented programming language that runs on the Java Virtual Machine (JVM). It's the foundation for millions of applications, from enterprise software to Android apps. Java's "write once, run anywhere" philosophy makes it incredibly versatile.<a href="https://developer.mozilla.org/en-US/docs/Glossary/Java" target="_blank">more....</a></p>
                 </div>
             </section>
             <section class="scroll-section">
-                <img src="./src/css/components/images/php.png" alt="PHP">
+                <img class="floating" src="./src/css/components/images/php.png" alt="PHP">
                 <div class="text">
                     <h1>PHP</h1>
-                    <p>PHP is a server-side scripting language designed for web development. It powers millions of websites, including Facebook and WordPress. PHP is easy to learn, has excellent database integration, and works seamlessly with HTML and CSS.</p>
+                    <p>PHP is a server-side scripting language designed for web development. It powers millions of websites, including Facebook and WordPress. PHP is easy to learn, has excellent database integration, and works seamlessly with HTML and CSS.<a href="https://developer.mozilla.org/en-US/docs/Glossary/PHP" target="_blank">more....</a></p>
                 </div>
             </section>
             <section class="scroll-section">
-                <img src="./src/css/components/images/ruby.png" alt="Ruby">
+                <img class="floating" src="./src/css/components/images/ruby.png" alt="Ruby">
                 <div class="text">
                     <h1>Ruby</h1>
-                    <p>Ruby is an elegant, dynamic programming language focused on simplicity and productivity. Ruby on Rails, its popular web framework, has revolutionized web development with its convention-over-configuration approach. Ruby's philosophy is "programmer happiness."</p>
+                    <p>Ruby is an elegant, dynamic programming language focused on simplicity and productivity. Ruby on Rails, its popular web framework, has revolutionized web development with its convention-over-configuration approach. Ruby's philosophy is "programmer happiness".<a href="https://developer.mozilla.org/en-US/docs/Glossary/Ruby" target="_blank">more....</a></p>
                 </div>
             </section>
             <section class="scroll-section">
-                <img src="./src/css/components/images/c.png" alt="c">
+                <img class="floating" src="./src/css/components/images/c.png" alt="c">
                 <div class="text">
                     <h1>C</h1>
-                    <p>C is a foundational programming language that has influenced many modern languages. It provides low-level access to memory and efficient execution, making it ideal for system programming, embedded systems, and performance-critical applications.</p>
+                    <p>C is a foundational programming language that has influenced many modern languages. It provides low-level access to memory and efficient execution, making it ideal for system programming, embedded systems, and performance-critical applications.<a href="https://learn.microsoft.com/en-us/cpp/c-language/?view=msvc-170" target="_blank">more....</a></p>
                 </div>
             </section>
             <section class="scroll-section">
-                <img src="./src/css/components/images/C++.png" alt="C++">
+                <img class="floating" src="./src/css/components/images/C++.png" alt="C++">
                 <div class="text">
                     <h1>C++</h1>
-                    <p>C++ is a powerful extension of C with object-oriented programming capabilities. It's used in game development, operating systems, and high-performance applications. C++ offers fine-grained control over system resources while supporting modern programming paradigms.</p>
+                    <p>C++ is a powerful extension of C with object-oriented programming capabilities. It's used in game development, operating systems, and high-performance applications. C++ offers fine-grained control over system resources while supporting modern programming paradigms.<a href="https://learn.microsoft.com/en-us/cpp/cpp/?view=msvc-170" target="_blank">more....</a></p>
                 </div>
             </section>
             <section class="scroll-section">
-                <img src="./src/css/components/images/kotlin.png" alt="Kotlin">
+                <img class="floating" src="./src/css/components/images/kotlin.png" alt="Kotlin">
                 <div class="text">
                     <h1>Kotlin</h1>
-                    <p>Kotlin is a modern, concise programming language that runs on the JVM and is fully interoperable with Java. It's the preferred language for Android development, offering null safety, extension functions, and expressive syntax that reduces boilerplate code.</p>
+                    <p>Kotlin is a modern, concise programming language that runs on the JVM and is fully interoperable with Java. It's the preferred language for Android development, offering null safety, extension functions, and expressive syntax that reduces boilerplate code.<a href="https://kotlinlang.org/docs/home.html" target="_blank">more....</a></p>
                 </div>
             </section>
             <section class="scroll-section">
-                <img src="./src/css/components/images/javascript.png" alt="javascript">
+                <img class="floating" src="./src/css/components/images/javascript.png" alt="javascript">
                 <div class="text">
                     <h1>JavaScript</h1>
-                    <p>JavaScript is the programming language of the web, enabling interactive websites and web applications. Alongside HTML and CSS, JavaScript forms the foundation of modern web development. It runs in browsers and, with Node.js, on servers too.</p>
+                    <p>JavaScript is the programming language of the web, enabling interactive websites and web applications. Alongside HTML and CSS, JavaScript forms the foundation of modern web development. It runs in browsers and, with Node.js, on servers too.<a href="https://developer.mozilla.org/en-US/docs/Glossary/JavaScript" target="_blank">more....</a></p>
                 </div>
             </section>
             <button class="nav-button" id="prev">❮</button>
             <button class="nav-button" id="next">❯</button>
         </div>
-
+        
+        
     </div>
 
     <!-- about section  -->
@@ -169,9 +170,9 @@
     </div>
     <footer>
         <div class="more button-hover padding-style">
-            <h4><a href="#about">about</a></h4>
-            <h4><a href="#contact">contact</a></h4>
-            <h4><a href="#share">share</a></h4>
+            <h4><a class="fotter-button" href="#about">about</a></h4>
+            <h4><a class="fotter-button" href="#contact">contact</a></h4>
+            <h4><a class="fotter-button" href="#share">share</a></h4>
         </div>
         <div class="languages">
             <h2>Languages</h2>

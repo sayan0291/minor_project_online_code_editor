@@ -1,7 +1,17 @@
 @media (max-width:769px) {
+    .button-hover-floating{
+        font-size: 1.2rem !important;
+    }
 
+    .dropdown-item a{
+        font-size: 1.3rem;
+    }
     .cm-editor{
         height: 55vh !important;
+    }
+
+    .output-section{
+        height: 23vh !important;
     }
     
     form{
@@ -27,6 +37,15 @@
 
 
 @media (max-width:426px) {
+
+
+    .dropdown-item a{
+        font-size: 1rem;
+    }
+    .button-hover-floating{
+        font-size: 1rem !important;
+    }
+
     form{
         width: 75vw;
     }
@@ -37,6 +56,10 @@
 
     .cm-editor{
         height: 58vh !important;
+    }
+
+    .output-section{
+        height: 20vh !important;
     }
 
     .output-section textarea{
@@ -64,8 +87,16 @@
 
 @media (max-width:376px){
 
-    .button-hover h4, h4 a{
-        font-size: 1rem;
+
+    .dropdown-item a{
+        font-size: 0.8rem;
+    }
+    .button-hover-floating{
+        font-size: 0.8rem;
+    }
+
+    .output-section{
+        height: 20vh !important;
     }
 
     h2{
@@ -91,6 +122,13 @@
 
 @media (max-width:321px) {
 
+    .dropdown-item a{
+        font-size: 0.7rem;
+    }
+
+    .button-hover-floating{
+        font-size: 0.7rem !important;
+    }
     footer{
         font-size: 0.7rem;
         padding: 0.5rem;

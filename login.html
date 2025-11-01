@@ -22,7 +22,7 @@
         }
 
         .sign-up-model-content{
-            margin-top: 2rem;
+            margin-top: 7rem;
             background: #29297c;
             padding: 3rem 2rem;
             border-radius: 1rem;
@@ -88,6 +88,24 @@
             gap: 1rem;        
         }
 
+        .floating {
+            animation: floating 6s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-25px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
         @media (max-width:425px) {
             .sign-up-model-content{
                 width: 80%;
@@ -103,8 +121,8 @@
     </style>
 </head>
 <body>
-    <div class="sign-up-model">
-        <div class="sign-up-model-content">
+    <div class="sign-up-model"> 
+        <div class="sign-up-model-content floating">
             <form class="form active" id="sign-up">
                 <h2>Sign-Up</h2>
                 <input type="text" id="sign-up-username" placeholder="Username" required>

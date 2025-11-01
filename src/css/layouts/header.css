@@ -4,6 +4,7 @@ header{
     align-items: center;
     background-color: #696FC7;
     padding: 1rem 1rem 1rem 3rem;
+    position: relative;
 }
 
 .container1 img{
@@ -37,12 +38,13 @@ header{
     position: absolute;
     background-color: #696FC7;
     padding: 1rem 0 0 0;
-    z-index: 1;
+    border-radius: 10px;
+    z-index: 11;
 }
 
 .dropdown-item a{
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-decoration: none;
     padding: 0.5rem 1rem;
     display: block;
@@ -56,6 +58,7 @@ header{
 .dropdown:hover .dropdown-item{
     display: block;
 }
+
 
 @media (max-width: 450px) {
     header{

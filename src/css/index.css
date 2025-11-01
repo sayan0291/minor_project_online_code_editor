@@ -16,14 +16,37 @@
     box-sizing: border-box;
 }
 
+body::-webkit-scrollbar{
+    display: none;
+}
+
 body{
     width: 100%;
     background: rgb(240, 233, 233);
     overflow-x: hidden;
+    scrollbar-width: none;
 }
 
 
 h2{
     font-size: 1.5rem;
     color: rgb(202, 216, 226);
+}
+
+.floating {
+    animation: floating 6s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-25px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }
