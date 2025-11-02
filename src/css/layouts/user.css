@@ -1,10 +1,33 @@
+#user{
+    background: black;
+}
+
+.user-content{
+    position: absolute;
+    top: 20%;
+    backdrop-filter: none;
+}
+
+#lottie-container{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+
 .fa-user{
-    color: rgb(5, 67, 67);
+    color: rgb(47, 187, 187);
     font-size: 4rem;
     margin-bottom: 1rem;
 }
 
 .user-content h3{
     margin: 0.5rem 0 0.3rem;
+    color: rgb(6, 228, 248);
     font-size: 1.5rem;
 }

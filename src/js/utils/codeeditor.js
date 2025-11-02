@@ -25,7 +25,7 @@ function getLanguageExtension(lang) {
     case "python": return python();
     case "java": return java();
     case "php": return php();
-    case "c":
+    case "c": return cpp();
     case "c++": return cpp();
     case "kotlin": return java(); // Kotlin similar to Java
     case "ruby": return javascript(); // placeholder if you don’t have ruby pkg

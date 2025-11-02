@@ -3,3 +3,10 @@
     background-color: transparent;
     color: rgb(70, 108, 45);
 }
+
+p{
+    font-size: 1.5rem;
+    color: rgb(199, 56, 102);
+    font-weight: 500;
+    opacity: 5;
+}

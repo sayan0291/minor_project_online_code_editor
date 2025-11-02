@@ -35,5 +35,11 @@ window.addEventListener('hashchange',function (e){
 window.addEventListener('load', function() {
     showSection();
     scrolesection();
-    hologram();
+    const animation = lottie.loadAnimation({
+        container: document.getElementById('lottie-container'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'src/animations/hologram.json'
+    });
 });

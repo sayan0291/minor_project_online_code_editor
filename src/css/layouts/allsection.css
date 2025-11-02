@@ -36,15 +36,10 @@
     position: absolute;
     align-items: center;
     text-align: center;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(3px);
     background-color: transparent;
     max-width: 700px;
+    z-index: 1;
 }
 
-p{
-    font-size: 1.5rem;
-    color: rgb(171, 177, 232);
-    font-weight: 500;
-    opacity: 5;
-}
 
