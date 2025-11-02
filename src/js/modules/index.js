@@ -1,4 +1,5 @@
 import { scrolesection } from "./scrole-section.js";
+import { animation } from "./animation.js";
 
 const logo = document.querySelector('.logo');
 
@@ -35,11 +36,9 @@ window.addEventListener('hashchange',function (e){
 window.addEventListener('load', function() {
     showSection();
     scrolesection();
-    const animation = lottie.loadAnimation({
-        container: document.getElementById('lottie-container'),
-        renderer: 'svg',
-        loop: true,
-        autoplay: true,
-        path: 'src/animations/hologram.json'
-    });
 });
+
+
+window.addEventListener('DOMContentLoaded',function (){
+    animation();
+})

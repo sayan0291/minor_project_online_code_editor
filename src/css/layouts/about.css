@@ -1,12 +1,16 @@
 .about-position{
     padding: 1rem;
     background-color: transparent;
-    color: rgb(70, 108, 45);
+    color: rgb(177, 171, 197);
+}
+
+#about-robot{
+    height: 85vh;
 }
 
 p{
     font-size: 1.5rem;
-    color: rgb(199, 56, 102);
+    color: rgb(104, 156, 220);
     font-weight: 500;
     opacity: 5;
 }

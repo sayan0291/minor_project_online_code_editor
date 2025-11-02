@@ -14,16 +14,21 @@
         .sign-up-model{
             display: flex;
             width: 100%;
-            height:100%;
+            height:100vh;
             border-radius: 2rem;
             background: white;
             justify-content: center;
             align-items: center;
         }
 
+        #login-animation{
+            position: absolute;
+        }
+
         .sign-up-model-content{
             margin-top: 7rem;
-            background: #29297c;
+            background: transparent;
+            backdrop-filter: blur(1px);
             padding: 3rem 2rem;
             border-radius: 1rem;
             max-width: 400px;
@@ -35,12 +40,13 @@
             height: 2rem;
             border: 1px solid #29297c;
             border-radius: 6px;
+            background: transparen;
             transition: transform 0.2s;
             padding: 1rem;
         }
 
         form input:hover{
-            transform: scale(1.1);
+            transform: translateY(-3px);
         }
 
         form button{
@@ -61,18 +67,20 @@
         }
 
         form p{
-            color: antiquewhite;
+            color: rgb(7, 30, 111);
+            font-weight: 700;
         }
 
         form p i {
             text-decoration: none;
-            color: rgba(228, 213, 230, 0.895);
+            color: rgba(80, 69, 178, 0.895);
+            font-weight: 900;
             cursor: pointer;
         }
 
         h2{
             font-family: cursive;
-            color: antiquewhite;
+            color: rgb(142, 131, 195);
             font-weight: bolder;
         }
 
@@ -98,7 +106,7 @@
             }
 
             50% {
-                transform: translateY(-25px);
+                transform: translateY(-30px);
             }
 
             100% {
@@ -122,6 +130,7 @@
 </head>
 <body>
     <div class="sign-up-model"> 
+        <div id="login-animation"></div>
         <div class="sign-up-model-content floating">
             <form class="form active" id="sign-up">
                 <h2>Sign-Up</h2>
@@ -143,6 +152,7 @@
         </div>
     </div>
 </body>
+<script src="src/js/lottie.min.js"></script>
 <script>
     const signup = document.querySelector('#sign-up')
     const signin = document.querySelector('#sign-in')
@@ -261,6 +271,15 @@
             }
         }
     })
-    
+
+    window.addEventListener('DOMContentLoaded',function (){
+        const animationcontact = lottie.loadAnimation({
+            container: document.getElementById('login-animation'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: 'src/animations/login.json'
+        });
+    })    
 </script>
 </html>
