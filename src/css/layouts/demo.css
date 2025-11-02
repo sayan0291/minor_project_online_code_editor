@@ -17,14 +17,6 @@
     scrollbar-width: none;
 }
 
-#main-animation{
-    height: 100%;
-    width: 100vw;
-    position: absolute;
-    object-fit: contain;
-    z-index: 0;
-}
-
 .scroll-section{
     flex: 0 0 100vw;
     height: 100vh;
