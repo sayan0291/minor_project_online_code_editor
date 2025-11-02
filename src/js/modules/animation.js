@@ -20,4 +20,11 @@ export function animation(){
             autoplay: true,
             path: 'src/animations/contact.json'
         });
+        const animation = lottie.loadAnimation({
+            container: document.getElementById('main-animation'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: 'src/animations/Space.json'
+        });
 }

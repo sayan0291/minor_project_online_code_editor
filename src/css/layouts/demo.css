@@ -17,6 +17,14 @@
     scrollbar-width: none;
 }
 
+#main-animation{
+    height: 100%;
+    width: 100vw;
+    position: absolute;
+    object-fit: contain;
+    z-index: 0;
+}
+
 .scroll-section{
     flex: 0 0 100vw;
     height: 100vh;
@@ -25,7 +33,7 @@
     gap: 4vw;
     padding: 0 5vw 0 8vw;
     scroll-snap-type: start;
-    background: rgb(7, 7, 7);
+    background: transparent;
 }
 
 .scroll-section img{
