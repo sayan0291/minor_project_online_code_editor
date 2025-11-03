@@ -26,8 +26,9 @@ form input,textarea{
     opacity: 1;
 }
 
-form input,textarea::before{
-    color: aliceblue;
+form ::placeholder{
+    color: rgb(25, 150, 77);
+    font-size: larger;
 }
 
 form button{

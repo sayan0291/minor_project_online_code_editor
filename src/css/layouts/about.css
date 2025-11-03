@@ -1,16 +1,20 @@
+#about{
+    background: rgb(201, 247, 245);
+}
+
 .about-position{
     padding: 1rem;
-    background-color: transparent;
-    color: rgb(177, 171, 197);
+    color: rgba(244, 246, 248, 0.997);
 }
 
 #about-robot{
-    height: 85vh;
+    height: 75vh;
+    opacity: 4;
 }
 
 p{
     font-size: 1.5rem;
-    color: rgb(104, 156, 220);
+    color: rgb(5, 96, 253);
     font-weight: 500;
-    opacity: 5;
+    opacity: 50;
 }

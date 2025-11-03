@@ -6,6 +6,7 @@
     height: 100vh;
     width: 100vw;
     scroll-behavior: smooth;
+    background: black;
     position: relative;
 }
 
@@ -50,7 +51,7 @@
 .text p{
     line-height: 1.8;
     font-size: 1.2rem;
-    color: #ffffff;
+    color: #efdbec;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
     background: linear-gradient(10deg,rgb(186, 94, 156),rgb(44, 44, 219));
     padding: 20px;
