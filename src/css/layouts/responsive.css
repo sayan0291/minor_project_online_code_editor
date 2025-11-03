@@ -1,4 +1,7 @@
 @media (max-width:769px) {
+    .container1 img{
+        width: 10%;
+    }
     .button-hover-floating{
         font-size: 1.2rem !important;
     }
@@ -37,7 +40,9 @@
 
 
 @media (max-width:426px) {
-
+    .container1 img{
+        width: 12%;
+    }
 
     .dropdown-item a{
         font-size: 1rem;
@@ -87,7 +92,9 @@
 
 @media (max-width:376px){
 
-
+    .container1 img{
+        width: 13%;
+    }
     .dropdown-item a{
         font-size: 0.8rem;
     }
@@ -121,7 +128,9 @@
 }
 
 @media (max-width:321px) {
-
+    .container1 img{
+        width: 15%;
+    }
     .dropdown-item a{
         font-size: 0.7rem;
     }

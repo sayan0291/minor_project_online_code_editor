@@ -32,6 +32,6 @@ window.addEventListener('DOMContentLoaded', function(){
     });
 
     loginbutton.addEventListener('click', function(){
-        window.location.href = "/login.html";
+        window.location.href = "login.html";
     });
 });
