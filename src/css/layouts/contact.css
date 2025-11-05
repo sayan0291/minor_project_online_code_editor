@@ -10,6 +10,7 @@ form{
     width: 400px;
     border: 1px solid #5031a6;
     border-radius: 10px;
+    backdrop-filter: blur(1px);
     padding-top: 3rem;
 }
 
@@ -20,14 +21,14 @@ form input,textarea{
     margin: 0.5rem;
     border: 2px solid rgb(130, 175, 238);
     border-radius: 5px;
-    color: rgb(203, 8, 8);
+    color: rgb(228, 5, 180);
     font-size: 1rem;
-    background: transparent;
-    opacity: 1;
+    background: rgba(55, 2, 2, 0);
+    opacity: 5;
 }
 
 form ::placeholder{
-    color: rgb(25, 150, 77);
+    color: rgb(0, 24, 111);
     font-size: larger;
 }
 
@@ -48,5 +49,6 @@ form button:hover{
 }
 
 #contact-robot{
-    height: 70vh;
+    height: 110%;
+    opacity: 1;
 }
