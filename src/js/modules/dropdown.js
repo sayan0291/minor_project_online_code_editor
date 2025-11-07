@@ -48,7 +48,7 @@ runbutton.addEventListener('click',async function inputoutput(){
     }
 })
 
-window.addEventListener('DOMContentLoaded', function(){
-    loadSavedLanguage();
+window.addEventListener('DOMContentLoaded',function (){
     dropdown();
-});
+    loadSavedLanguage();
+})

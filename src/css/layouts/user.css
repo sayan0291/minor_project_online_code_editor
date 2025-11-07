@@ -3,13 +3,13 @@
 }
 
 .user-content{
-    top: 18%;
+    top: 20%;
 }
 
 #lottie-container{
     position: absolute;
-    top: 5%;
     width: 55%;
+    top: 15%;
     z-index: 0;
     pointer-events: none;
 }
@@ -23,7 +23,7 @@
 
 .user-content h3{
     margin: 0.5rem 0 0.3rem;
-    color: rgb(4, 252, 144);
+    color: rgb(167, 252, 252);
     font-size: 1.5rem;
     font-family:'Courier New', Courier, monospace;
     font-weight: 700;
@@ -79,7 +79,7 @@
 }
 @media (max-width: 321px) {
     .user-content{
-        top: 20% !important;
+        top: 25% !important;
     }
 
 

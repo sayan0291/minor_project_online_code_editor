@@ -5,18 +5,19 @@
 
 .about-position{
     padding: 1rem;
-    color: rgba(20, 255, 138, 0.997);
+    margin-bottom: 3rem;
+    color: rgba(0, 255, 242, 0.997);
     font-weight: 900;
 }
 
 #about-robot{
-    height: 120%;
+    height: 110%;
     opacity: 4;
 }
 
 p{
     font-size: 1.5rem;
-    color: #001133;
+    color: #000000;
     backdrop-filter: blur(2px);
     font-weight: 500;
     opacity: 50;

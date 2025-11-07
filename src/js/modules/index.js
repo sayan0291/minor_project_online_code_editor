@@ -1,11 +1,10 @@
 import { scrolesection } from "./scrole-section.js";
 import { animation } from "./animation.js";
+import { logincontrol } from "./login.js";
 
-const logo = document.querySelector('.logo');
 
 
 let user = JSON.parse(localStorage.getItem('userarray')) || [];
-console.log(user);
 
 
 function showSection() {
@@ -13,7 +12,6 @@ function showSection() {
     sections.forEach(sec => sec.style.display = "none");
 
     let hash = window.location.hash || "#homepage";
-
     let checkhash = document.querySelector(hash);
     if(!checkhash){
         alert(`The Section is not available ${checkhash}`);
@@ -40,5 +38,8 @@ window.addEventListener('load', function() {
 
 
 window.addEventListener('DOMContentLoaded',function (){
+    showSection();
     animation();
+    logincontrol();
+    dropdown();
 })

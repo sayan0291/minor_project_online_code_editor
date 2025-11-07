@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', function(){
+export function logincontrol(){
     const loginbutton = document.querySelector('#log-in');
     const logoutbutton = document.querySelector('#log-out');
     let logout = document.querySelector('#toogle-log-out');
@@ -9,29 +9,30 @@ window.addEventListener('DOMContentLoaded', function(){
     const isLoggedIn = localStorage.getItem('isLoggedIn');
     const currentUser = JSON.parse(localStorage.getItem('currentUser'));
     
-    if(currentUser){
-        username.textContent = `Username: ${currentUser.username}`
-        email.textContent = `Email: ${currentUser.email}`
-    }
     
     if(isLoggedIn === 'true'){
         login.classList.remove('active');
         logout.classList.add('active');
-        const username = document.querySelector('.activeuser')
-        username.innerHTML = currentUser.username;
+        const usernamesection = document.querySelector('.activeuser')
+        usernamesection.innerHTML = currentUser.username;
+        username.textContent = `Username: ${currentUser.username}`
+        email.textContent = `Email: ${currentUser.email}`
     } else {
         logout.classList.remove('active');
         login.classList.add('active');
-    }+
+    }
     
     logoutbutton.addEventListener('click', function(){
         localStorage.setItem('isLoggedIn', 'false');
 
         logout.classList.remove('active');
         login.classList.add('active');
+        username.textContent = '';
+        email.textContent = '';
+        localStorage.setItem('currentUser', null);
     });
 
     loginbutton.addEventListener('click', function(){
         window.location.href = "login.html";
     });
-});
+};
