@@ -1,17 +1,17 @@
 #about{
-    background: rgb(201, 247, 245);
+    background: white;
 }
 
 
 .about-position{
     padding: 1rem;
     margin-bottom: 3rem;
-    color: rgba(0, 255, 242, 0.997);
+    color: #bcccec;
     font-weight: 900;
 }
 
 #about-robot{
-    height: 110%;
+    height: 100%;
     opacity: 4;
 }
 

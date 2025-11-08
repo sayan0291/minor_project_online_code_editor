@@ -1,30 +1,37 @@
 export function animation(){
-        const animationhologram = lottie.loadAnimation({
+        lottie.loadAnimation({
             container: document.getElementById('lottie-container'),
             renderer: 'svg',
             loop: true,
             autoplay: true,
             path: 'src/animations/hologram.json'
         });
-        const animationrobot = lottie.loadAnimation({
+        lottie.loadAnimation({
             container: document.getElementById('about-robot'),
             renderer: 'svg',
             loop: true,
             autoplay: true,
             path: 'src/animations/robot.json'
         });
-        const animationcontact = lottie.loadAnimation({
+        lottie.loadAnimation({
             container: document.getElementById('contact-robot'),
             renderer: 'svg',
             loop: true,
             autoplay: true,
             path: 'src/animations/contact.json'
         });
-        const animation = lottie.loadAnimation({
-            container: document.getElementById('main-animation'),
+        lottie.loadAnimation({
+            container: document.getElementById('other-animation1'),
             renderer: 'svg',
             loop: true,
             autoplay: true,
-            path: 'src/animations/Space.json'
+            path: 'src/animations/others.json'
+        });
+        lottie.loadAnimation({
+            container: document.getElementById('other-animation2'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: 'src/animations/contact.json'
         });
 }

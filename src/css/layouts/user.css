@@ -29,6 +29,7 @@
     font-weight: 700;
 }
 
+
 @media (max-width: 769px) {
     .user-content{
         top: 25% !important;

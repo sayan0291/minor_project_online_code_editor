@@ -1,16 +1,25 @@
 
 
 #contact h2{
-    color: #15015B;
+    color: #528cff;
     padding: 1rem;
+}
+
+#contact .section-content{
+    border-radius: 5px;
+}
+
+#contact img{
+    height: 140%;
+    background-size: contain;
 }
 
 
 form{
     width: 400px;
-    border: 1px solid #5031a6;
+    border: 1px solid #20095e;
     border-radius: 10px;
-    backdrop-filter: blur(1px);
+    box-shadow: 5px 5px 135px rgb(0, 0, 0,0.4);
     padding-top: 3rem;
 }
 
@@ -19,16 +28,16 @@ form input,textarea{
     min-width: 80%;
     padding: 0.5rem;
     margin: 0.5rem;
-    border: 2px solid rgb(130, 175, 238);
     border-radius: 5px;
-    color: rgb(228, 5, 180);
+    border: 2px solid #15015B;
+    color: rgb(0, 0, 0);
     font-size: 1rem;
     background: rgba(55, 2, 2, 0);
     opacity: 5;
 }
 
 form ::placeholder{
-    color: rgb(0, 24, 111);
+    color: rgb(4, 23, 18);
     font-size: larger;
 }
 
