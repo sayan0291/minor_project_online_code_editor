@@ -85,6 +85,10 @@
             font-weight: bolder;
         }
 
+        .alert{
+            color: red;
+        }
+
         .form{
             display: none;
         }
@@ -135,6 +139,7 @@
         <div class="sign-up-model-content floating">
             <form class="form active" id="sign-up">
                 <h2>Sign-Up</h2>
+                <p class="alert"></p>
                 <input type="text" id="sign-up-username" placeholder="Username" required>
                 <input type="email" id="sign-up-email" placeholder="Email" required>
                 <input type="password" id="sign-up-password" placeholder="Password" required>
@@ -144,6 +149,7 @@
             </form>
             <form class="form" id="sign-in">
                 <h2>Log-In</h2>
+                <p class="alert"></p>
                 <input type="text" id="log-in-username" placeholder="Username" required>
                 <input type="email" id="login-email" placeholder="Email" required>
                 <input type="password" id="login-password" placeholder="Password" required>
@@ -168,6 +174,7 @@
     const loginpassword = document.querySelector('#login-password')
     const buttonsignin = document.querySelector('.buttonsignin')
     const buttonlogin = document.querySelector('.buttonlogin')
+    const alertmessage = document.querySelector('.alert')
 
     let userarray = JSON.parse(localStorage.getItem('userarray')) || []
     
@@ -219,22 +226,22 @@
         signinvalidity.preventDefault();
 
         if(!signupemail.checkValidity()){
-            alert('Please enter a valid email address');
+            alertmessage.textContent = "Please enter a valid email address";
             return;
         }else if(passwordvalue !== confirmpasswordvalue){
-            alert('Passwords do not match');
+            alertmessage.textContent = "Passwords do not match";
             return;
         }else if(passwordvalue.length < 6){
-            alert('Password must be at least 6 characters long');
+            alertmessage.textContent = "Password must be at least 6 characters long";
             return;
         }else if(username.length < 3){
-            alert('Username must be at least 3 characters long');
+            alertmessage.textContent = "Username must be at least 3 characters long";
             return;
         }else if(existingEmailUser){
-            alert(`This Email is Already Exist!`);
+            alertmessage.textContent = "This Email is Already Exist!";
             return;
         }else if(existingUsernameUser){
-            alert(`This Username is Already Exist!`);
+            alertmessage.textContent = "This Username is Already Exist!";
             return;
         }else{
             const newuser = new users(username,emailvalue,passwordvalue);
@@ -256,10 +263,10 @@
 
         loginvalidity.preventDefault();
         if(!loginemail.checkValidity()){
-            alert(`Enter a Valid Email Address`);
+            alertmessage.textContent = "Enter a Valid Email Address";
             return;
         }else if(!existingUser){
-            alert(`The Email is Not Logged In`);
+            alertmessage.textContent = "The Email is Not Logged In";
             return;
         }else if(existingUser){
             if(existingUser.password === passwordvalue){
@@ -267,7 +274,7 @@
                 localStorage.setItem('currentUser', JSON.stringify(existingUser));
                 window.location.replace('index.html');
             }else{
-                alert(`Password is Incorrect`)
+                alertmessage.textContent = "Password is Incorrect";
                 return;
             }
         }

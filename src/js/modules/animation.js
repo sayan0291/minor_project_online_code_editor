@@ -25,13 +25,20 @@ export function animation(){
             renderer: 'svg',
             loop: true,
             autoplay: true,
-            path: 'src/animations/others.json'
+            path: 'src/animations/others1.json'
         });
         lottie.loadAnimation({
             container: document.getElementById('other-animation2'),
             renderer: 'svg',
             loop: true,
             autoplay: true,
-            path: 'src/animations/contact.json'
+            path: 'src/animations/others2.json'
         });
+        // lottie.loadAnimation({
+        //     container: document.getElementById('other-animation3'),
+        //     renderer: 'svg',
+        //     loop: true,
+        //     autoplay: true,
+        //     path: 'src/animations/preview.json'
+        // });
 }
