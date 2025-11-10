@@ -1,12 +1,12 @@
 #about{
-    background: white;
+    background: rgb(126, 148, 245);
 }
 
 
 .about-position{
     padding: 1rem;
     margin-bottom: 2rem;
-    color: #bcccec;
+    color: #43c6bb;
     font-weight: 900;
 }
 

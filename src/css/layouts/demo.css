@@ -1,6 +1,6 @@
-/* #homepage{
-    display: block;
-} */
+#homepage{
+    background: rgb(220, 220, 232);
+}
 
 .first{
     height: 80vh;
@@ -15,65 +15,4 @@
 
 #other-animation2{
     height: 100%;
-}
-
-
-/* Responsive adjustments for sections and content */
-@media (max-width: 769px){
-    .scroll-section{
-        flex-direction: column;
-        justify-content: center;
-        gap: 6vw;
-        padding: 8vh 6vw;
-        text-align: center;
-    }
-    .text{
-        width: 90%;
-    }
-    .text h1{
-        font-size:2rem;
-    }
-    .text p{
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 561px){
-    .scroll-section img{
-        width: 53% !important;
-    }
-
-
-}
-@media (max-width: 426px){
-    .scroll-section img{
-        width: 55% !important;
-    }
-
-    .text{
-        width: 90%;
-    }
-    .text h1{
-        font-size:1.5rem !important;
-    }
-    .text p{
-        font-size: 0.9rem !important;
-    }
-
-}
-@media (max-width: 300px){
-    .scroll-section img{
-        width: 55% !important;
-    }
-
-    .text{
-        width: 100%;
-    }
-    .text h1{
-        font-size: 1.1rem !important;
-    }
-    .text p{
-        font-size: 0.75rem !important;
-    }
-
 }

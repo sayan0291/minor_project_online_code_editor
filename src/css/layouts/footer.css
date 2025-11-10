@@ -1,10 +1,15 @@
 footer{
     display: flex;
     justify-content: center;
-    background-color: darkslateblue;
+    background-color: rgba(7, 3, 32, 0.93);
     font-size: 1.1rem;
     padding: 1rem;
     gap: 1rem;
+}
+
+.more{
+    display: flex;
+    flex-direction: column;
 }
 
 .padding-style h4{
@@ -18,7 +23,11 @@ footer{
     gap: 0 1rem;
 }
 
-
+h3{
+    color: #ffffff;
+    filter: brightness(400%);
+    font-size: 1.1rem;
+}
 
 a{
     text-decoration: none;
@@ -26,11 +35,12 @@ a{
 
 .morelanguages a{
     text-decoration: none;
-    color: #CFFFDC;
-    font-size: 1.2rem;
+    color: #03fcb9;
+    font-size: 0.9rem;
 }
 
 
 .fotter-button{
-    font-size: 1.4rem;
+    font-size: 1rem;
+    font-weight: 800;
 }

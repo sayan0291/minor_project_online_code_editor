@@ -2,15 +2,11 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #696FC7;
-    padding: 1rem 1rem 1rem 3rem;
+    background-color: #0d0f2f;
+    padding: 1rem;
     position: relative;
 }
 
-.container1 img{
-    height: 5%;
-    width: 5%;
-}
 
 /* user section customization */
 
@@ -26,6 +22,7 @@ header{
 
 .menu{
     display: flex;
+    flex-direction: row;
 }
 
 .dropdown{
@@ -36,32 +33,29 @@ header{
 .dropdown-item{
     display: none;
     position: absolute;
-    background-color: #696FC7;
+    background-color: #080b2f;
     padding: 1rem 0 0 0;
-    border-radius: 10px;
+    border-end-end-radius: 10px;
     z-index: 11;
 }
 
 .dropdown-item a{
     color: white;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-decoration: none;
     padding: 0.5rem 1rem;
     display: block;
+    transition: transform 0.1s ease;
 }
 
 .dropdown-item a:hover{
-    background-color: white;
-    color: #696FC7;
+    background-color: rgb(255, 255, 255);
+    color: #0606fa;
+    border-end-end-radius: 10px;
+    transform: translateY(-0.1px);
+    font-weight: 600;
 }
 
 .dropdown:hover .dropdown-item{
     display: block;
-}
-
-
-@media (max-width: 450px) {
-    header{
-        padding: 1rem;
-    }
 }

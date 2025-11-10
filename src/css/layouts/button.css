@@ -1,22 +1,20 @@
-.button-hover h4,h4 a{
+.button-hover .link{
     text-decoration: none;
-	color: #D3D3FF;
-    font-family: geometric sans-serif;
+	color: #ffffff;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 900;
     transition: transform 0.1s;
+    margin-left: 0.7rem;
+    letter-spacing: 0.7px;
+    filter: brightness(500%);
 	cursor: pointer;
-    padding: 0 0.4rem;
 }
 
-.button-hover h4:hover{
-	color: #bebfe6;
-    transform: translateY(-0.5px);
-}
-
-.button-hover h4 a:hover{
-	color: #bebfe6;
+.button-hover .link:hover{
+	color: #26287e;
     transform: translateY(-0.5px);
 }
 
 .button-hover-floating{
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
