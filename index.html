@@ -10,9 +10,9 @@
 <body>
     <header class="container1">
         <h2>Coding</h2>
-        <div class="menu">
-            <div class="dropdown button-hover button-hover-floating">
-                <a class="link">Select Languages</a>
+        <div class="menu button-hover button-size">
+            <div class="dropdown">
+                <a>Select Languages</a>
                 <div class="dropdown-item">
                     <a href="#codespaceid" id="python">Python</a>
                     <a href="#codespaceid" id="java">Java</a>
@@ -24,12 +24,22 @@
                     <a href="#codespaceid" id="javascript">JavaScript</a>
                 </div>
             </div>
-            <div class="user button-hover button-hover-floating" id="toogle-log-out">
-                <a class="activeuser link" href="#user">User</a>
-                <a class="link" id="log-out">Logout</a>
+            <div class="desktop-view">
+                <a href="#homepage">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a href="#user" class="activeuser" id="desktopuserview"><i class="fa-solid fa-user"></i></a>
+                <a id="log-in">Login</a>
             </div>
-            <div class="user button-hover button-hover-floating active" id="toogle-log-in">
-                <a class="link" id="log-in">Login</a>
+            <div class="mobile-view">
+                <i class="fa-solid fa-bars"></i>
+                <ul class="mobile-view-item">
+                    <a href="#homepage">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#user" class="activeuser" id="mobileuserview"><i class="fa-solid fa-user"></i></a>
+                    <a href="login.html">Login</a>
+                </ul>
             </div>
         </div>
     </header>
@@ -83,9 +93,10 @@
         <div class="align-center other-section">
         <div id="lottie-container"></div>
         <div class="section-content user-content floating">
-            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-user display-user"></i>
             <h3 class="username"></h3>
             <h3 class="email"></h3>
+            <a id="log-out">LogOut</a>
         </div>
         </div>
     </div>
@@ -106,10 +117,6 @@
         </div>
     </div>
     <footer>
-        <div class="more button-hover padding-style">
-            <a class="fotter-button link" href="#about">about</a>
-            <a class="fotter-button link" href="#contact">contact</a>
-        </div>
         <div class="languages">
             <h3>Languages</h3>
             <div class="morelanguages padding-style">

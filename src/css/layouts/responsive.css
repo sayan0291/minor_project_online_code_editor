@@ -1,15 +1,15 @@
-@media (max-width:769px) {
+@media (max-width:768px) {
 
     .button-hover a{
        margin-left: 0.6rem !important;
     }
 
     .dropdown-item a{
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .button-hover-floating{
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .cm-editor{
@@ -41,18 +41,26 @@
     }
 }
 
-@media (max-width:500px) {
+@media (max-width:580px) {
 
-    h2{
-        font-size: 1.6rem !important;
+    .desktop-view{
+        display: none;
+    }
+
+    .mobile-view{
+        display: block;
+    }
+
+    .button-hover a{
+        margin-left: 0.6rem !important;
     }
 
     .dropdown-item a{
         font-size: 0.8rem !important;
     }
 
-    .button-hover-floating{
-        font-size: 0.8rem !important;
+    .button-size{
+        font-size: 0.9rem !important;
     }
 
     .first,.second{
@@ -108,11 +116,7 @@
     }
 }
 
-@media (max-width: 440px) {
-
-    header{
-        padding-right: 0.5rem;
-    }
+@media (max-width: 426px) {
 
     .dropdown-item a{
         font-size: 0.8rem;

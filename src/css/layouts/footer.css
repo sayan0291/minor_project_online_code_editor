@@ -7,11 +7,6 @@ footer{
     gap: 1rem;
 }
 
-.more{
-    display: flex;
-    flex-direction: column;
-}
-
 .padding-style h4{
     padding: 2px;
 }
@@ -29,18 +24,8 @@ h3{
     font-size: 1.1rem;
 }
 
-a{
-    text-decoration: none;
-}
-
 .morelanguages a{
     text-decoration: none;
     color: #03fcb9;
     font-size: 0.9rem;
-}
-
-
-.fotter-button{
-    font-size: 1rem;
-    font-weight: 800;
 }

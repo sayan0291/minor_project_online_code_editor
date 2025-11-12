@@ -1,20 +1,36 @@
-.button-hover .link{
+.button-hover a{
     text-decoration: none;
 	color: #ffffff;
     font-family:'Times New Roman', Times, serif;
     font-weight: 900;
-    transition: transform 0.1s;
+    transition: transform 0.15s;
     margin-left: 0.7rem;
     letter-spacing: 0.7px;
     filter: brightness(500%);
 	cursor: pointer;
 }
 
-.button-hover .link:hover{
+.button-hover a:hover{
+    transform: translateY(-1px);
 	color: #26287e;
-    transform: translateY(-0.5px);
 }
 
-.button-hover-floating{
+
+.button-hover i{
+    text-decoration: none;
+	color: #ffffff;
+    font-weight: 900;
+    transition: transform 0.15s;
+    letter-spacing: 0.7px;
+    filter: brightness(500%);
+	cursor: pointer;
+}
+
+.button-hover i:hover{
+    transform: translateY(-1px);
+	color: #26287e;
+}
+
+.button-size{
     font-size: 1rem;
 }

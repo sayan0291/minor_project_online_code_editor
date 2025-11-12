@@ -1,11 +1,13 @@
 export function animation(){
-        lottie.loadAnimation({
+        const animation = lottie.loadAnimation({
             container: document.getElementById('lottie-container'),
             renderer: 'svg',
             loop: true,
             autoplay: true,
             path: 'src/animations/hologram.json'
         });
+
+        animation.setSpeed(0.75)
         lottie.loadAnimation({
             container: document.getElementById('about-robot'),
             renderer: 'svg',

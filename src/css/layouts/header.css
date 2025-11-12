@@ -4,37 +4,66 @@ header{
     align-items: center;
     background-color: #0d0f2f;
     padding: 1rem;
-    position: relative;
 }
 
 
 /* user section customization */
 
-.user{
-    display: none;
-}
-
-.user.active{
-    display: flex;
-}
-
-/* dropdown menu for select languages */
-
 .menu{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-.dropdown{
-    position: relative;
-    display: inline-block;
+.desktop-view{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
+
+.mobile-view{
+    display: none;
+    padding-left: 0.7rem;
+}
+
+.mobile-view-item{
+    display: none;
+    position: absolute;
+    background-color: #080b2f;
+    right: 10px;
+    z-index: 11;
+}
+
+.mobile-view-item a{
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+    transition: transform 0.1s ease;
+}
+
+.mobile-view-item a:hover{
+    background-color: rgb(255, 255, 255);
+    color: #0606fa;
+    transform: translateY(-0.1px);
+    font-weight: 600;
+}
+
+.mobile-view:hover .mobile-view-item{
+    display: block;
+}
+
+
+
+/* dropdown menu for select languages */
 
 .dropdown-item{
     display: none;
     position: absolute;
     background-color: #080b2f;
-    padding: 1rem 0 0 0;
     border-end-end-radius: 10px;
     z-index: 11;
 }
