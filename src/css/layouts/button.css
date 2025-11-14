@@ -3,7 +3,7 @@
 	color: #ffffff;
     font-family:'Times New Roman', Times, serif;
     font-weight: 900;
-    transition: transform 0.15s;
+    transition: transform 1s ease;
     margin-left: 0.7rem;
     letter-spacing: 0.7px;
     filter: brightness(500%);
@@ -11,23 +11,7 @@
 }
 
 .button-hover a:hover{
-    transform: translateY(-1px);
-	color: #26287e;
-}
-
-
-.button-hover i{
-    text-decoration: none;
-	color: #ffffff;
-    font-weight: 900;
-    transition: transform 0.15s;
-    letter-spacing: 0.7px;
-    filter: brightness(500%);
-	cursor: pointer;
-}
-
-.button-hover i:hover{
-    transform: translateY(-1px);
+    transform: translateY(-0.5px);
 	color: #26287e;
 }
 
