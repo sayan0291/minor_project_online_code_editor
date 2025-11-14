@@ -3,7 +3,7 @@ footer{
     justify-content: center;
     background-color: rgba(7, 3, 32, 0.93);
     font-size: 1.1rem;
-    padding: 1rem;
+    padding: 1rem 1rem 0.4rem 1rem;
     gap: 1rem;
 }
 
@@ -19,13 +19,12 @@ footer{
 }
 
 h3{
-    color: #ffffff;
-    filter: brightness(400%);
-    font-size: 1.1rem;
+    color: #72efff;
+    font-size: 120%;
 }
 
 .morelanguages a{
     text-decoration: none;
-    color: #03fcb9;
-    font-size: 0.9rem;
+    color: #f5eff0;
+    font-size: 100%;
 }

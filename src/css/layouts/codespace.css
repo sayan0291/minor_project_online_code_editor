@@ -3,6 +3,7 @@
     padding: 1rem !important;
     height: 100vh;
     background: black;
+    overflow: auto;
 }
 
 .codespace header{
@@ -42,8 +43,12 @@
     color: rgb(255, 255, 255);
 }
 
+.codespace h3{
+    color: black;
+}
+
 .fa-solid{
-    font-size: 1.5rem;
+    font-size: 150%;
     font-weight: bolder;
     color: white;
 }

@@ -7,7 +7,7 @@ const languagename = document.querySelector('#languagename');
 const runbutton = document.querySelector('.fa-play')
 let languagetext;
 
-const languages = ["html-css-js","python","java","php","ruby","c","c++","kotlin","javascript"];
+const languages = ["python","java","php","ruby","c","c++","kotlin","javascript"];
 
 function loadSavedLanguage(){
     const saved = localStorage.getItem('selectlanguage');

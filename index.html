@@ -51,11 +51,34 @@
             <div id="other-animation1"></div>
         </div>
         <div class="second">
-            <h2>Write Your Code Here</h2>
+        <h2 class="welcome">Welcome to Online Code Editor</h2>
+        <p class="welcomep">
+            Your friendly place to learn, write, and run code — anytime, anywhere.
+        </p>
+        <p class="welcomep">
+            Whether you're practicing exercises, exploring new languages,
+            or learning to code for the first time, our editor makes coding simple and fun.
+        </p>
+
+        <div class="features floating">
+            <div class="card">
+                <h3>Run Code Instantly</h3>
+                <p>Write and run code with one click — no installation or signup.</p>
+            </div>
+            <div class="card">
+                <h3>Real-Time Output</h3>
+                <p>See results instantly as your program runs. Great for learning.</p>
+            </div>
+            <div class="card">
+                <h3>Syntax Highlighting</h3>
+                <p>Clean and colorful formatting helps you write better code.</p>
+            </div>
+            <div class="card">
+                <h3>Supports 8 Languages</h3>
+                <p>Python, Java, PHP, Ruby, C, C++, Kotlin, JavaScript.</p>
+            </div>
         </div>
-        <!-- <div class="third">
-            <div id="other-animation3"></div>
-        </div> -->
+    </div>
     </div>
 
     <!-- about section  -->
@@ -90,13 +113,19 @@
 
     <!-- user section  -->
     <div class="section" id="user">
-        <div class="align-center other-section">
+        <div class="user-section other-section">
         <div id="lottie-container"></div>
         <div class="section-content user-content floating">
             <i class="fa-solid fa-user display-user"></i>
-            <h3 class="username"></h3>
-            <h3 class="email"></h3>
-            <a id="log-out">LogOut</a>
+            <div id="username">
+                <p>UserName:</p>
+                <h3 class="username"></h3>
+            </div>
+            <div id="email">
+                <p>UserName:</p>
+                <h3 class="email"></h3>
+            </div>
+            <button id="log-out">LogOut</button>
         </div>
         </div>
     </div>
@@ -131,6 +160,7 @@
             </div>
         </div>
     </footer>
+    <p class="text">© 2025 Online Code Editor — Learn, code, and grow every day.</p>
     <script src="src/js/lottie.min.js"></script>
     <script type="module" src="src/js/modules/index.js"></script>
     <script type="module" src="src/js/modules/dropdown.js"></script>

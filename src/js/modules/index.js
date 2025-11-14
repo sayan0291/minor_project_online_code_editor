@@ -1,7 +1,6 @@
 import { scrolesection } from "./scrole-section.js";
 import { animation } from "./animation.js";
 import { logincontrol } from "./login.js";
-const isLoggedIn = localStorage.getItem('isLoggedIn');
 
 
 function showSection() {
@@ -16,9 +15,10 @@ function showSection() {
         checkhash = document.querySelector(hash);
 
         window.history.replaceState(null,null,"#homepage");
-    }else if(window.location.hash === "#user" && isLoggedIn !== 'true'){
+    }else if(window.location.hash === "#user" && localStorage.getItem('isLoggedIn') !== 'true'){
         alert("Needs Login First");
         window.location.replace('#homepage');
+        return;
     }
     else{
         checkhash.style.display = "block";

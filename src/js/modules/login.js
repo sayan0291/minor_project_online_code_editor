@@ -24,8 +24,8 @@ export function logincontrol(){
     
     if(isLoggedIn === 'true'){
         login.style.display = "none"
-        username.textContent = `Username: ${currentUser.username}`
-        email.textContent = `Email: ${currentUser.email}`
+        username.textContent = `${currentUser.username}`
+        email.textContent = `${currentUser.email}`
     }else {
         view();
     }
