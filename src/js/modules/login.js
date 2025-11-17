@@ -11,9 +11,7 @@ export function logincontrol(){
     const isLoggedIn = localStorage.getItem('isLoggedIn');
     const currentUser = JSON.parse(localStorage.getItem('currentUser'));
 
-    activeuser.addEventListener('click',function () {
-        location.href = "#user";
-    })
+    
 
     function view(){
         login.style.display = "block";

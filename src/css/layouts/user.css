@@ -2,31 +2,27 @@
     background: rgb(18, 18, 18);
 }
 
-.user-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .user-content{
     padding: 2rem 0 1rem 0;
     border-radius: 10px;
     border: 2px solid blue;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    top: 20%;
 }
 
 #username,#email{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    padding: 0 2rem;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem 0.3rem;
 }
 
 #lottie-container{
     position: absolute;
-    top: 5%;
-    width: 70%;
+    top: 20%;
+    width: 60%;
     z-index: 0;
     pointer-events: none;
 }
@@ -41,7 +37,7 @@
 .user-content p{
     color: rgb(251, 251, 251);
     filter: brightness(100%);
-    font-size: 100%;
+    font-size: 1rem;
 }
 
 
@@ -69,4 +65,49 @@
     background: rgb(255, 139, 232);
     transform: scale(1.1);
     color: rgb(9, 6, 6);
+}
+
+@media (max-width:768px) {
+    #lottie-container{
+        width:78%;
+    }
+}
+
+
+@media (max-width:580px) {
+    #lottie-container{
+        width:100%;
+    }
+    .user-content p{
+        font-size: 1rem !important;
+    }
+}
+
+@media (max-width:481px) {
+
+    .section{
+        height: 60vh !important;
+    }
+    #lottie-container{
+        top: 25%;
+        width:100%;
+    }
+    .user-content p{
+        font-size: 1rem !important;
+    }
+
+    .user-content h3{
+        font-size: 0.9rem !important;
+    }
+}
+
+@media (max-width:376px) {
+
+    #lottie-container{
+        top: 19%;
+        width:110%;
+    }
+    .user-content{
+        top: 17%;
+    }
 }

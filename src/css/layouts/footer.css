@@ -20,7 +20,7 @@ footer{
 
 h3{
     color: #cef6fb;
-    font-size: 100%;
+    font-size: 1.1em;
     font-weight: 700;
 }
 
@@ -28,5 +28,16 @@ h3{
     text-decoration: none;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #f5eff0;
-    font-size: 100%;
+}
+
+
+@media (max-width:580px) {
+    h3{
+        font-size: 1rem;
+    }
+}
+@media (max-width:340px) {
+    h3{
+        font-size: 0.7rem;
+    }
 }

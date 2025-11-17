@@ -17,27 +17,11 @@
     }
 
     .output-section{
-        height: 23vh !important;
+        height: 80vh !important;
     }
     
-    form{
-        width: 60vw;
-    }
-
-    .section-content{
-        max-width: 450px !important;
-    }
-
-    .h2-styling{
-        font-size: 1.5rem;
-    }    
-
-    p{
-        font-size: 1.1rem;
-    }
-
-    h3{
-        font-size: 1.1rem;
+    .section{
+        height: 65vh !important;
     }
 }
 
@@ -67,53 +51,7 @@
         height: 70vh;
     }
 
-    .other-section{
-        height: 70vh !important;
-    }
 
-    form{
-        width: 75vw;
-    }
-
-    .codespace{
-        padding: 0;
-    }
-
-    .cm-editor{
-        height: 58vh !important;
-    }
-
-    .output-section{
-        height: 20vh !important;
-    }
-
-    .output-section textarea{
-        width: 95%;
-    }
-
-    .section{
-        padding: 0.5rem !important;
-    }
-
-    .section-content{
-        max-width: 380px !important;
-    }
-
-    .h2-styling{
-        font-size: 1.6rem !important;
-    }
-    
-
-    p{
-        font-size: 1.3rem !important;
-    }
-    h3{
-        font-size: 1rem;
-    }
-
-    .morelanguages a{
-        font-size: 0.8rem;
-    }
 }
 
 @media (max-width: 426px) {
@@ -131,10 +69,6 @@
         height: 65vh;
     }
 
-    form{
-        width: 75vw;
-    }
-
     .codespace{
         padding: 0;
     }
@@ -143,20 +77,8 @@
         height: 58vh !important;
     }
 
-    .output-section{
-        height: 20vh !important;
-    }
-
-    .output-section textarea{
-        width: 95%;
-    }
-
     .section{
         padding: 0.5rem !important;
-    }
-
-    .section-content{
-        max-width: 380px !important;
     }
 
     .h2-styling{
@@ -194,17 +116,9 @@
         height: 20vh !important;
     }
 
-
-    form{
-        width: 75vw;
-    }
-
     .section{
         padding: 0.3rem !important;
-    }
-
-    .section-content{
-        max-width: 350px !important;
+        height: 50vh !important;
     }
 
     p{
@@ -239,25 +153,11 @@
         gap: 0.7rem;
     }
 
-    form{
-        width: 85vw !important;
-    }
-
-    .section-content{
-        max-width: 330px !important;
-    }
 
     p{
         font-size: 1.1rem !important;
     }
 
-    h3{
-        font-size: 0.7rem;
-    }
-
-    .morelanguages  a{
-        font-size: 0.7rem;
-    }
 }
 
 
@@ -279,20 +179,5 @@
         gap: 0.7rem;
     }
 
-    form{
-        width: 85vw !important;
-    }
-
-    .section-content{
-        max-width: 330px !important;
-    }
-
-    p{
-        font-size: 1.1rem !important;
-    }
-
-    h3{
-        font-size: 0.5rem;
-    }
 }
 
