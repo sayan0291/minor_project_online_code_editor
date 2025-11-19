@@ -1,3 +1,13 @@
+#user{
+    display: none;
+}
+#about{
+    display: none;
+}
+#contact{
+    display: none;
+}
+
 .section{
     height: 80vh;
 }
@@ -31,13 +41,3 @@
 }
 
 
-.text{
-    font-size: 100%;
-    text-align: center;
-    line-height: 1.5;
-    font-weight: 900;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background: rgba(7, 3, 32, 0.93);
-    color: rgb(208, 204, 223);
-    padding: 0 0 1rem 0;
-}

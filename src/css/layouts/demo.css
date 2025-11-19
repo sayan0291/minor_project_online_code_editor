@@ -2,7 +2,6 @@
     background: rgb(255, 255, 255);
     align-items: center;
     text-align: center;
-    padding-bottom: 2%;
     height: auto;
     overflow: scroll;
     scrollbar-width: none;
@@ -16,13 +15,12 @@
     height: 62vh;
 }
 
-#other-animation1{
-    height: 100%;
+.second{
+    padding: 0 1rem;
 }
 
-.second {
-    margin-top: 2rem;
-    padding: 0 1rem;
+#other-animation1{
+    height: 100%;
 }
 
 .welcome {
@@ -44,17 +42,17 @@
 
 
 .features {
-    margin-top: 3rem;
+    margin: 1rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
-    padding: 0 2rem 0.5rem;
+    padding: 0 2rem;
 }
 
 
 .card {
     background: #273c4e;
-    padding: 2rem 1.5rem;
+    padding: 1rem 1.5rem;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     color: white;
@@ -62,7 +60,7 @@
 }
 
 .card h3 {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     font-family: cursive;
     font-weight: 800;
     color: #8dc4ff;
@@ -86,20 +84,87 @@
 
 @media (max-width: 768px) {
     .welcome {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
 
+    .welcomep{
+        font-size: 1.1rem;
+    }
+
+    .first{
+        height: 45vh !important;
+    }
     .hero-img {
         max-width: 95%;
     }
 }
 
+@media (max-width: 580px) {
+    .first{
+        height: 45vh !important;
+    }
+
+    .welcome {
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .welcomep{
+        font-size: 1rem;
+    }
+    .card h3{
+        font-size: 1.1rem;
+    }
+
+    .card p{
+        font-size: 0.95rem;
+    }
+}
+
 @media (max-width: 480px) {
     .welcome {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
+    }
+
+    .welcomep{
+        font-size: 0.8rem;
     }
 
     .card {
         padding: 1.5rem;
     }
+
+    .card h3{
+        font-size: 1rem;
+    }
+
+    .card p{
+        font-size: 0.85rem;
+    }
 }
+
+@media (max-width: 376px) {
+    .first{
+        height: 35vh !important;
+    }
+
+    .welcomep{
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 340px) {
+    .welcome{
+        font-size: 1rem;
+    }
+
+    .welcomep{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .welcome{
+        font-size: 1rem;
+    }
+}
+
