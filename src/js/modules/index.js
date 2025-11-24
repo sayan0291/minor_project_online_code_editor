@@ -1,4 +1,3 @@
-import { scrolesection } from "./scrole-section.js";
 import { animation } from "./animation.js";
 import { logincontrol } from "./login.js";
 
@@ -11,16 +10,14 @@ function showSection() {
     let checkhash = document.querySelector(hash);
     if(!checkhash){
         alert(`The Section is not available ${checkhash}`);
-        hash = "#homepage";
-        checkhash = document.querySelector(hash);
 
-        window.history.replaceState(null,null,"#homepage");
+        window.location.replace('#homepage')
+        return;
     }else if(window.location.hash === "#user" && localStorage.getItem('isLoggedIn') !== 'true'){
         alert("Needs Login First");
         window.location.replace('#homepage');
         return;
-    }
-    else{
+    }else{
         checkhash.style.display = "block";
     }
 }
@@ -33,7 +30,6 @@ window.addEventListener('hashchange',function (e){
 
 window.addEventListener('load', function() {
     showSection();
-    scrolesection();
 });
 
 

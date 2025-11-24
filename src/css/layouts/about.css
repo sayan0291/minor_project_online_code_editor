@@ -1,6 +1,6 @@
 /* MAIN BACKGROUND */
 #about {
-    background: rgb(209, 211, 221);
+    background: rgb(178, 180, 192);
 }
 
 .about-wrapper {
@@ -10,6 +10,7 @@
     align-items: center;
     gap: 2rem;
     max-width: 1200px;
+    padding: 2rem 0;
     margin: auto;
     width: 100%;
     height: 100%;
@@ -53,6 +54,19 @@
         width: 90%;
     }
 }
+@media (max-width: 600px) {
+    #about-robot {
+        width: 90%;
+    }
+
+    .about-content {
+        width: 80%;
+    }
+
+    .about-content p{
+        font-size: 1rem;
+    }
+}
 
 @media (max-width:500px) {
 
@@ -65,7 +79,7 @@
         position: relative;
         display: block;
         text-align: center;
-        padding: 1rem;
+        padding: 4rem 0;
     }
 
     #about-robot {

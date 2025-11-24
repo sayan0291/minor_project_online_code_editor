@@ -1,6 +1,6 @@
 @media (max-width:768px) {
 
-    .button-hover a{
+    /* .button-hover a{
        margin-left: 0.6rem !important;
     }
 
@@ -18,11 +18,7 @@
 
     .output-section{
         height: 80vh !important;
-    }
-    
-    .section{
-        height: 65vh !important;
-    }
+    } */
 }
 
 @media (max-width:580px) {
@@ -35,7 +31,7 @@
         display: block;
     }
 
-    .button-hover a{
+    /* .button-hover a{
         margin-left: 0.6rem !important;
     }
 
@@ -45,11 +41,7 @@
 
     .button-size{
         font-size: 0.9rem !important;
-    }
-
-    .first,.second{
-        height: 70vh;
-    }
+    } */
 
 
 }
@@ -103,7 +95,6 @@
 
     .section{
         padding: 0.3rem !important;
-        height: 50vh !important;
     }
 }
 
@@ -118,10 +109,6 @@
         margin-left: 0.3rem !important;
         letter-spacing: 0.4px !important;
         font-size: 0.7rem !important;
-    }
-
-    .first,.second{
-        height: 50vh;
     }
 
     footer{

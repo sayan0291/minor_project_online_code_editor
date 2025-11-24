@@ -28,7 +28,7 @@
                 <a href="#homepage">Home</a>
                 <a href="#about">About</a>
                 <a href="#contact">Contact</a>
-                <a href="#user" class="activeuser" id="desktopuserview"><i class="fa-solid fa-user"></i></a>
+                <a href="#user" class="activeuser" id="desktopuserview">User</a>
                 <a id="log-in">Login</a>
             </div>
             <div class="mobile-view">
@@ -37,7 +37,7 @@
                     <a href="#homepage">Home</a>
                     <a href="#about">About</a>
                     <a href="#contact">Contact</a>
-                    <a href="#user" class="activeuser" id="mobileuserview"><i class="fa-solid fa-user"></i></a>
+                    <a href="#user" class="activeuser" id="mobileuserview">User</a>
                     <a href="login.html">Login</a>
                 </ul>
             </div>
@@ -97,14 +97,14 @@
 
     <!-- contact section  -->
     <div class="section" id="contact">
-        <div class="align-center other-section contact-section">
+        <div class="align-center">
             <div id="contact-robot"></div>
-            <div class="section-content">
+            <div class="contact-section floating">
             <h2 class="h2-styling">Contact Us</h2>
-            <form>
+            <form class="align-center">
                 <input type="text" placeholder="Enter Your UserName" required>
                 <input type="email" placeholder="Enter Email Address" required>
-                <textarea name="sendmessage" id="send-message" rows="6" placeholder="this page is under process"></textarea>
+                <textarea name="sendmessage" id="send-message" rows="5" placeholder="this page is under process"></textarea>
                 <button>Submit</button>
             </form>
         </div>
@@ -115,21 +115,22 @@
     <!-- user section  -->
     <div class="section" id="user">
         <div class="align-center">
-        <div id="lottie-container"></div>
-        <div class="user-content floating">
-            <i class="fa-solid fa-user display-user"></i>
-            <div id="username">
-                <p>UserName:</p>
-                <h3 class="username"></h3>
+            <div class="user-card">
+                <div class="user-avatar">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="user-details">
+                    <h2 class="profile-title">Profile</h2>
+        
+                    <p><strong>UserName:</strong> <span class="username">sayanhello</span></p>
+                    <p><strong>Email:</strong> <span class="email">hello@gmail.com</span></p>
+        
+                    <button id="log-out">Log Out</button>
+                </div>
             </div>
-            <div id="email">
-                <p>Email:</p>
-                <h3 class="email"></h3>
-            </div>
-            <button id="log-out">LogOut</button>
-        </div>
         </div>
     </div>
+    
 
 
     <!-- code write and execution section  -->

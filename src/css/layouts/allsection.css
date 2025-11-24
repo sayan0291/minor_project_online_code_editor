@@ -8,10 +8,6 @@
     display: none;
 }
 
-.section{
-    height: 80vh;
-}
-
 .h2-styling{
     font-size: 1.7rem;
     font-weight: 900;
@@ -23,21 +19,6 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-
-.other-section{
-    position: relative;
-    height: 100%;
-    overflow: hidden;
-}
-
-
-.section-content{
-    position: absolute;
-    align-items: center;
-    text-align: center;
-    background-color: transparent;
-    z-index: 1;
 }
 
 

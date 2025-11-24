@@ -2,8 +2,6 @@
     background: rgb(255, 255, 255);
     align-items: center;
     text-align: center;
-    height: auto;
-    overflow: scroll;
     scrollbar-width: none;
 }
 
@@ -11,16 +9,13 @@
     display: none;
 }
 
-.first{
-    height: 62vh;
-}
-
 .second{
     padding: 0 1rem;
 }
 
 #other-animation1{
-    height: 100%;
+    display: inline-block;
+    width: 37%;
 }
 
 .welcome {
@@ -42,47 +37,49 @@
 
 
 .features {
-    margin: 1rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
-    padding: 0 2rem;
+    display: inline-block;
+    padding: 1rem;
 }
 
 
 .card {
-    background: #273c4e;
-    padding: 1rem 1.5rem;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-    color: white;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: none;
+    padding: 1rem;
+    transition: all 0.5s ease cubic-bezier(.25,.8,.25,1);
 }
 
+
+.card:hover {
+    border-radius: 2px;
+    filter: blur(0.0003px);
+    background-color: rgb(250, 255, 187);
+    box-shadow: 6px 6px 3px 0px rgba(0,0,0,.1);
+}
+
+/* .card-list:has(li:hover) li:not(:hover) {
+    filter: blur(4px)
+  }
+   */
 .card h3 {
     margin-bottom: 0.5rem;
-    font-family: cursive;
+    font-family:'Times New Roman', Times, serif;
     font-weight: 800;
-    color: #8dc4ff;
+    color: hwb(209 0% 70%);
     font-size: 1.3rem;
 }
 
 .card p {
-    opacity: 0.9;
+    opacity: 1;
     font-family:monospace;
     font-size: 1.1rem;
-    line-height: 1.3;
-    color: rgb(204, 52, 255);
-}
-
-.card:hover {
-    transform:scale(1.1);
-    background: white;
-    box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+    color: rgb(152, 158, 196);
 }
 
 
 @media (max-width: 768px) {
+    #other-animation1{
+        width: 59%;
+    }
     .welcome {
         font-size: 1.5rem;
     }
@@ -90,19 +87,9 @@
     .welcomep{
         font-size: 1.1rem;
     }
-
-    .first{
-        height: 45vh !important;
-    }
-    .hero-img {
-        max-width: 95%;
-    }
 }
 
 @media (max-width: 580px) {
-    .first{
-        height: 45vh !important;
-    }
 
     .welcome {
         font-size: 1.3rem;
@@ -144,9 +131,6 @@
 }
 
 @media (max-width: 376px) {
-    .first{
-        height: 35vh !important;
-    }
 
     .welcomep{
         font-size: 0.9rem;
@@ -165,6 +149,10 @@
 @media (max-width: 320px) {
     .welcome{
         font-size: 1rem;
+    }
+
+    .features{
+        padding: 0;
     }
 }
 
