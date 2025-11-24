@@ -9,6 +9,11 @@ header{
 
 /* user section customization */
 
+.fa-bars{
+    color: aliceblue;
+    font-size: 1.3rem;
+}
+
 .menu{
     display: flex;
     flex-direction: row;

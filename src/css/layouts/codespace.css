@@ -1,9 +1,8 @@
 .codespace{
     display: none;
     padding: 1rem !important;
-    height: 100vh;
+    height: auto;
     background: black;
-    overflow: auto;
 }
 
 .codespace header{
@@ -26,19 +25,19 @@
 }
 
 .output-section{
-    height: 22vh;
+    height: 30vh;
+    margin-bottom: 3rem;
 }
 
 .outputarea{
     width: 100%;
     height: 100%;
-    padding: 1rem;
+    padding: 0.5rem;
     font-size: 170%;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     border: 1px solid rgb(167, 245, 249);
     white-space: pre-wrap;
-    overflow-y: auto;
     box-sizing: border-box;
 }
 
@@ -48,11 +47,11 @@
 }
 
 .codespace h3{
-    color: black;
+    color: rgb(81, 98, 153);
 }
 
-.fa-solid{
-    font-size: 150%;
+.display-play{
+    font-size: 1.5rem;
     font-weight: bolder;
-    color: white;
+    color: rgb(79, 16, 156);
 }
