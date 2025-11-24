@@ -45,7 +45,11 @@ h3{
     h3{
         font-size: 1rem;
     }
+    .text{
+        font-size: 0.9rem;
+    }
 }
+
 @media (max-width:340px) {
     h3{
         font-size: 0.7rem;

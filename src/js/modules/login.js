@@ -1,6 +1,7 @@
 export function logincontrol(){
     const logoutbutton = document.querySelector('#log-out');
-    let login = document.querySelector('#log-in');
+    let desktoplogin = document.querySelector('#desktop-log-in');
+    let mobilelogin = document.querySelector('#mobile-log-in');
     const username = document.querySelector('.username');
     const email = document.querySelector('.email');
     const activeuser = document.querySelector('.activeuser');
@@ -14,14 +15,16 @@ export function logincontrol(){
     
 
     function view(){
-        login.style.display = "block";
+        desktoplogin.style.display = "block";
+        mobilelogin.style.display = "block";
         desktopuserview.style.display = "none";
         mobileuserview.style.display = "none";
     }
     
     
     if(isLoggedIn === 'true'){
-        login.style.display = "none"
+        desktoplogin.style.display = "none";
+        mobilelogin.style.display = "none";
         username.textContent = `${currentUser.username}`
         email.textContent = `${currentUser.email}`
     }else {
