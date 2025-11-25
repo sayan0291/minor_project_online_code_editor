@@ -2,8 +2,8 @@
     text-decoration: none;
 	color: #ffffff;
     font-family:geometric sans-serif;
-    font-weight: 900;
-    transition: transform 1s ease;
+    font-weight: bolder;
+    transition: transform 2s ease;
     margin-left: 0.7rem;
     letter-spacing: 0.7px;
     filter: brightness(500%);
@@ -11,10 +11,10 @@
 }
 
 .button-hover a:hover{
-    transform: translateY(-0.5px);
-	color: #26287e;
+    transform: translateY(-0.3px);
+	color: #292a7d;
 }
 
 .button-size{
-    font-size: 1rem;
+    font-size: 1.1rem;
 }

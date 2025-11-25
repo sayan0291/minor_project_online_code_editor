@@ -38,8 +38,4 @@ export function logincontrol(){
         localStorage.setItem('currentUser', null);
         window.location.replace('#homepage');
     });
-
-    login.addEventListener('click', function(){
-        window.location.href = "login.html";
-    });
 };

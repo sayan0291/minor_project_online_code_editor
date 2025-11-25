@@ -36,6 +36,11 @@ h2{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+a{
+    color: inherit;
+    text-decoration: inherit;
+}
+
 
 .floating {
     animation: floating 6s ease-in-out infinite;
